@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="featurebgimg">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+    <div class="executive-wrapper featured_box fullwidth">
+        <div class="featureheading_wrapper">
+            <h4 class="featurebox_heading blue fullwidth">Executive Corner</h4>
+        </div> </div>
+        <h3 class="caption_text" id="executiveCornerTitle"></h3>
+        <small class="date text-left" id="executiveCornerDate"></small>
+    </div>
+    <div class="col-md-12">
+        <div class="executive_infobox">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="executive_photo">
+                        <img src="" class="img-responsive" id="executiveCornerImg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="executive_details">
+                    <a id="executiveCornerUserNameLink" target="_blank"><h5 class="blue" id="executiveCornerUserName"></h5></a>
+                    <small class="date text-left" id="executiveCornerDepartment"></small>
+                    <p class="justified" id="executiveCornerDesc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="view_morebox">
+   <a href="/sites/Intranet-Dev/Pages/ExecutiveCornerDetails.aspx">
+      <div class="viewmore_text">
+      Read More
+      </div>
+      <div class="next_arrow">                
+   
+      </div>
+      </a>
+      </div>
+   </div>
+  
+      
+<script type="text/javascript">
+    $(document).ready(function() {
+        KPCU.ExecutiveCorner(true);
+    });
+</script>

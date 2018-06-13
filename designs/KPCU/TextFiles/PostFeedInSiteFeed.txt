@@ -1,0 +1,178 @@
+
+<div id="newsfeedSection"></div>
+<script type="text/javascript">
+
+var clientContext;
+var feedManager;
+var allfeeds;
+var website;
+var websiteurl = "";
+$(document).ready(function () {
+    try {
+        SP.SOD.executeFunc('sp.js', 'SP.ClientContext', sharePointReady);
+    }
+    catch (ex) {
+        alert(ex);
+    }
+});
+
+function sharePointReady() {
+    clientContext = SP.ClientContext.get_current();
+    website = clientContext.get_web();
+    clientContext.load(website);
+    clientContext.executeQueryAsync(onRequestSucceeded, onRequestFailed);
+}
+function onRequestSucceeded() {
+    // Ensure that the SP.UserProfiles.js file is loaded before the custom code runs.
+
+    websiteurl = website.get_url();
+    console.log(websiteurl);
+    SP.SOD.executeOrDelayUntilScriptLoaded(GetFeeds, 'SP.UserProfiles.js');
+}
+function onRequestFailed(sender, args) {
+    alert('Error: ' + args.get_message());
+}
+
+
+function GetFeeds() {
+
+    // Initialize the current client context and the SocialFeedManager instance.
+    clientContext = SP.ClientContext.get_current();
+
+    feedManager = new SP.Social.SocialFeedManager(clientContext);
+
+    // Set parameters for the feed content that you want to retrieve.
+    var feedOptions = new SP.Social.SocialFeedOptions();
+    feedOptions.set_maxThreadCount(10); // default is 20
+    // debugger;
+    subsiteurl = $('.microblog_projectsdl option:selected').val();
+    console.log(subsiteurl);
+    // Get all feed types for current site and get the Personal feed
+    allfeeds = feedManager.getFeedFor(websiteurl + "/" + subsiteurl + "/newsfeed.aspx", feedOptions);
+    clientContext.load(feedManager);
+    clientContext.executeQueryAsync(CallIterateFunctionForFeeds, RequestFailed);
+}
+function CallIterateFunctionForFeeds() {
+    IterateThroughFeed(allfeeds, "News", false);
+}
+function IterateThroughFeed(feed, feedType, isCurrentUser) {
+    var unreadcnt = feedManager.getUnreadMentionCount().get_value();
+    if (unreadcnt > 0) {
+        document.getElementById("spnunreadpstcnt").innerHTML = unreadcnt;
+    }
+    else {
+
+    }
+    var threads = feed.get_threads();
+    var divfeeds = "<div class=\"post-divfeeds\">";
+    for (var i = 0; i < threads.length ; i++) {
+        var thread = threads[i];
+        var actors = thread.get_actors();
+
+        if (thread.get_threadType() == 0) {
+
+
+            // Get the root post's author, content, and number of replies.
+            var post = thread.get_rootPost();
+            var authorName = actors[post.get_authorIndex()].get_name();
+            var postContent = post.get_text();
+            var totalReplies = thread.get_totalReplyCount();
+            var picURL = actors[post.get_authorIndex()].get_imageUri();
+            var attachment = post.get_attachment();
+            if (attachment != null) {
+                var previewuri = attachment.get_uri();
+                var attachmentname = attachment.get_name();
+            }
+            else {
+                previewuri = null;
+                attachmentname = null;
+            }
+            if (picURL == null || picURL == '') {
+                picURL = "/_layouts/15/images/PersonPlaceholder.42x42x32.png";
+
+            }
+            divfeeds = divfeeds + "<div class=\"post-divfeed\"><img class=\"post-person\" src=\"" + picURL + "\" alt=\"" + authorName + "\"><span class=\"post-authorname\">" + authorName + "</span><div class=\"post-content\">" + postContent + "</div> ";
+
+            if (previewuri != null && previewuri != '') {
+                divfeeds = divfeeds + "<div class=\"post-Preview\"><img class=\"post-person\" src=\"" + previewuri + "\" alt=\"" + attachmentname + "\"></div> "
+            }
+
+            // If there are any replies, iterate through the array and
+            // get the author and content. 
+            // If a thread contains more than two replies, the server
+            // returns a thread digest that contains only the two most
+            // recent replies. To get all replies, call the 
+            // SocialFeedManager.getFullThread method.
+            if (totalReplies > 0) {
+                divfeeds = divfeeds + "<div class=\"replypost-divfeed\">";
+                var replies = thread.get_replies();
+
+                for (var j = 0; j < replies.length; j++) {
+
+                    var r_post = replies[j];
+                    var r_authorName = actors[r_post.get_authorIndex()].get_name();
+                    var r_postContent = r_post.get_text();
+                    var r_picURL = actors[r_post.get_authorIndex()].get_imageUri();
+                    var r_attachment = r_post.get_attachment();
+                    if (r_attachment != null) {
+                        var r_previewuri = r_attachment.get_uri();
+                        var r_attachmentname = r_attachment.get_name();
+                    }
+                    else {
+                        var r_previewuri = null;
+                        var r_attachmentname = null;
+
+                    }
+
+
+                    if (picURL == null || picURL == '') {
+                        picURL = "/_layouts/15/images/PersonPlaceholder.42x42x32.png";
+                    }
+                    divfeeds = divfeeds + "<div class=\"post-divfeed\"><img class=\"post-person\" src=\"" + r_picURL + "\" alt=\"" + r_authorName + "\"><span class=\"post-authorname\">" + r_authorName + "</span><div class=\"post-content\">" + r_postContent + "</div> ";
+
+                    if (previewuri != null && previewuri != '') {
+                        divfeeds = divfeeds + "<div class=\"post-Preview\"><img class=\"post-person\" src=\"" + r_previewuri + "\" alt=\"" + r_attachmentname + "\"></div> "
+                    }
+                    divfeeds = divfeeds + "</div>";
+                }
+                divfeeds = divfeeds + "</div>";
+            }
+
+            divfeeds = divfeeds + "</div>";
+        }
+        divfeeds = divfeeds + "</div>";
+    }
+    document.getElementById("newsfeedSection").innerHTML = divfeeds;
+}
+function RequestFailed(sender, args) {
+    $get("spanMessage").innerText = 'Request failed: ' + args.get_message();
+}
+
+
+//Publish
+
+var resultThread;
+
+function PublishPost() {
+    // Initialize the current client context and the SocialFeedManager instance.
+    clientContext = SP.ClientContext.get_current();
+    feedManager = new SP.Social.SocialFeedManager(clientContext);
+    //var socialDataItems = [linkDataItem];
+    var content = document.getElementById("txtPost").innerText;
+    // Create the post content.
+    var postCreationData = new SP.Social.SocialPostCreationData();
+    postCreationData.set_contentText(content);
+    subsiteurl = $('.microblog_projectsdl option:selected').val();
+    // Publish the post. Pass null for the "targetId" parameter because this is a root post.
+    resultThread = feedManager.createPost(websiteurl + "/" + subsiteurl + "/newsfeed.aspx", postCreationData);
+    clientContext.executeQueryAsync(PublishReply, PostFailed);
+}
+function PublishReply(sender, args) {
+    GetFeeds();
+    document.getElementById("txtPost").innerText = '';
+}
+
+function PostFailed(sender, args) {
+    alert('Error: ' + args.get_message());
+}
+</script>

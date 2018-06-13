@@ -1,0 +1,3769 @@
+﻿/********** KPCU Calibri font CSS starts here *******/
+@font-face {
+    font-family: 'calibri_regular';
+    src: url('../fonts/calibri.eot');
+   /*IE9 Compat Modes */
+    src: url('../fonts/calibri.eot?#iefix') format('embedded-opentype'), 
+   /*IE6-IE8 */
+    url('../fonts/calibri.woff') format('woff'), 
+   /*Pretty Modern Browsers */
+    url('../fonts/calibri.ttf') format('truetype'),
+   /*Safari, Android, iOS */
+    url('webfont.svg#svgFontName') format('svg');
+   /*Legacy iOS */
+}
+@font-face {
+    font-family: 'calibri_bold';
+    src: url('../fonts/Calibri-Bold.eot');
+   /*IE9 Compat Modes */
+    src: url('../fonts/Calibri-Bold.eot?#iefix') format('embedded-opentype'), 
+   /*IE6-IE8 */
+    url('../fonts/Calibri-Bold.woff') format('woff'), 
+   /*Pretty Modern Browsers */
+    url('../fonts/Calibri-Bold.ttf') format('truetype'),
+   /*Safari, Android, iOS */
+    url('webfont.svg#svgFontName') format('svg');
+   /*Legacy iOS */
+}
+@font-face {
+    font-family: 'calibri_light';
+    src: url('../fonts/Calibri-Light.eot');
+   /*IE9 Compat Modes */
+    src: url('../fonts/Calibri-Light.eot?#iefix') format('embedded-opentype'), 
+   /*IE6-IE8 */
+    url('../fonts/Calibri-Light.woff') format('woff'), 
+   /*Pretty Modern Browsers */
+    url('../fonts/Calibri-Light.ttf') format('truetype'),
+   /*Safari, Android, iOS */
+    url('webfont.svg#svgFontName') format('svg');
+   /*Legacy iOS */
+}
+/********** KPCU Calibri font CSS Ends here *******/
+/********** Font Awesome icons font starts here *******/
+@font-face {
+	font-family:'FontAwesome';
+	src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+	src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+		url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+		url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+		url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+		url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+	content: "\f00d";
+}
+.fa-bullhorn:before {
+	content: "\f0a1";
+}
+.fa-pencil:before {
+	content: "\f040";
+}
+.fa-plus:before {
+	content: "\f067";
+}
+.fa-clock-o:before {
+	content: "\f017";
+}
+.fa-map-marker:before {
+	content: "\f041";
+}
+.fa-bullhorn:before {
+	content: "\f0a1";
+}
+.fa-chevron-right:before {
+	content: "\f054";
+}
+.fa-thumbs-o-up:before {
+    content: "\f087";
+}
+.fa-commenting-o:before {
+    content: "\f27b";
+}
+.fa-share-alt:before {
+    content: "\f1e0";
+}
+.fa-star:before {
+    content: "\f005";
+}
+.fa-star-o:before {
+    content: "\f006";
+}
+.fa-check:before {
+    content: "\f00c";
+}
+.fa-angle-right:before {
+    content: "\f105";
+}
+.fa-angle-left:before {
+    content: "\f104";
+}
+
+.fa-caret-right:before {
+    content: "\f0da";
+}
+
+.fa-caret-left:before {
+    content: "\f0d9";
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+.fa-circle:before {
+    content: "\f111";
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+}
+.fa-filter:before {
+    content: "\f0b0";
+}
+.fa-chevron-left:before {
+    content: "\f053";
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+}
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+/********** Font Awesome icons font ends here ************/
+/********* SharePoint Defult CSS Overrides Starts here ******************/
+#contentRow {
+	padding-top: 15px !important;
+}
+#s4-bodyContainer {
+	padding-bottom: 30px;
+	min-height: 100%;
+}
+/********* SP Modal dialog CSS Starts Here ******************/
+.ms-dlgTitleText {
+	margin: 0px !important;
+}
+.ms-dlgTitleBtns {
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+	height: 16px;
+}
+.ms-dlgCloseBtn > span {
+	padding: 0px !important;
+}
+/********* SP Modal dialog CSS Ends Here ******************/
+/* overrite the min-width of content box for responsive use 14 may*/
+#contentBox {
+       min-width: 100%;
+}
+/* end css for  min-width of content box for responsive use 14 may*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri;
+	background-color: #f0f0f0 !important;
+	overflow-y: hidden !important;
+	font-family: 'calibri_regular';
+	height:100%;
+}
+.wrapper {
+	padding: 10px;
+	float: left;
+	width: 100%;
+}
+/********* SharePoint Defult CSS Overrides Ends here ******************/
+/********* Reusable Classes entire KPCU site CSS Starts here ******************/
+.WPHeaderName {
+	font-family: 'calibri_bold';
+    margin: 0px;
+}
+a {
+	text-decoration: none !important;	
+}
+.featurebgimg {
+	width: 100%;
+	background: #0067B0 url(../images/rebonstrip_pattern.png);
+	height: 6px;
+}
+.dept_featurebgimg {
+	background: #0067B0 url(../images/banner_pattern.png) top right;
+	height: 30px;
+}
+#bannerimage{
+	background-size: cover;
+    padding: 10px 20px;
+}
+.blue {
+	color: #0067B0 !important;
+}
+.orange {
+	color: #F89F6D !important;
+}
+.no-border {
+	border: none !important;
+}
+/*.label {
+	width: auto !important;
+	float: none;
+}*/
+.no-shadow {
+	box-shadow: none !important;
+}
+/*.label-primary {
+	background-color: #7897d0;
+}*/
+.fullwidth {
+	width: 100%;
+}
+.view_morebox {
+	float: right;
+	width: 140px;
+	/*position: absolute;*/
+	bottom: 0px;
+	right: 0px;
+}
+.viewmore_text {
+	width: 67%;
+	float: left;
+	text-align: right;
+	padding: 10px;
+	font-family: 'calibri_regular';
+	font-size: 12px;
+}
+.next_arrow {
+	width: 38px;
+	float: right;
+	height: 38px;
+	background: blue;
+	background: #0067B0 url(../images/small_pattern.png);
+	padding: 13px 8px;
+	opacity:1;
+}
+.view_morebox i {
+	padding: 9px 13px;
+	font-size: 23px;
+	color: #ffff;
+}
+h5.blue {
+	font-size: 16px;
+	color: #0067B0;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+p.justified {
+	text-align: justify;
+}
+.featured_box {
+	/*width: 48%;   
+    width: calc(100% - 51.8%);
+	width: -webkit-calc(100% - 51.8%);
+	width: -moz-calc(100% - 51.8%);*/
+	background: #ffffff;
+	float: left;
+	padding: 0 14px;
+	margin-top: 30px;
+	box-shadow: 0px 1px 5px 2px #e2e2e2;
+}
+.featureheading_wrapper {
+	float: left;
+	width: 100%;
+	margin: 5px 0;
+}
+.featured_box a {
+	color: #0067B0;
+	transition: all 0.5s;
+}
+.featured_box a:hover {
+	color: #F89F6D;
+}
+/********* Reusable Classes entire KPCU site CSS Starts here ******************/
+/******* Header CSS Starts here ***********/
+/******* Breadcrumb Logo CSS Starts here ***********/
+
+.mobile_header{
+	display:none;
+}
+
+
+.breadcrumb-cont {
+	padding: 0px;
+	margin: 0px;
+	height: 35px;
+	padding: 3px 0;
+}
+.ms-core-sideNavBox-removeLeftMargin {
+	margin-left: 0;
+	box-shadow: 0px 1px 3px 0px #dcdcdc;
+}
+.breadcrumb-cont span {
+	padding-right: 10px;
+}
+span.breadcrumb-icon {
+	font-size: 12px;
+	color: #595955;
+}
+a.breadcrumbRootNode, .breadcrumbNode, a.breadcrumbCurrentNode  {
+	color: #595955;
+	font-size: 16px;
+	font-family: 'calibri_regular';
+}
+/******* Breadcrumb Logo CSS Ends here ***********/
+/******* KPCU Logo CSS Starts here ***********/
+.Header_container {
+	float: left;
+	width: 100%;
+	padding: 20px 0px;
+}
+.company-logo{
+	margin-top:5px;
+}
+/******* KPCU Logo CSS Ends here ***********/
+/******* Home wheather forcast fonts and its CSS Starts here ***********/
+@font-face {
+    font-family: 'weather';
+    src: url('../fonts/Weather-Fonts/artill_clean_icons-webfont.eot');
+    src: url('../fonts/Weather-Fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Weather-Fonts/artill_clean_icons-webfont.woff') format('woff'),
+         url('../fonts/Weather-Fonts/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('../fonts/Weather-Fonts/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+.weather_img{
+	float:left;
+}
+span.celcius_temp {
+    border-left: solid 1px #333;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.weather_img i {
+  color: #F89F6D;
+  font-family: weather;
+  font-size: 73px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 43px;
+  text-transform: none;
+}
+.temp_container {	
+	margin-left: 8px;	
+}
+.temperature {
+	padding: 0px 5px;
+	color: #1e71b7 !important;
+	font-family: 'calibri_bold';
+	padding: 0;
+	float: left;
+	font-size:16px;
+}
+div.weather_location {
+	font-family: 'calibri_bold';
+	margin-left: 10px;
+	color: #676666;
+	float: left;
+	font-size:14px;
+}
+.duration_container {
+	clear: both;
+	font: 12px 'calibri_bold';
+	float: left;
+	margin: 5px 0;
+}
+.month_box {
+	float: left;
+	border-right: solid 2px #6b6b6b;
+	margin-right: 0px;
+	padding-right: 12px;
+}
+.day_box {
+	float: left;
+	padding-left: 8px;
+}
+/******* Home wheather forcast fonts and its CSS Starts here ***********/
+/********* Search Box CSS starts here ******************/
+#custom-search-input {
+	padding: 0px;
+	border: solid 1px #E4E4E4;
+	border-radius: 3px;
+	background-color: #fff;
+	margin-top: 0px;
+	height: 42px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#custom-search-input input {
+	border: 0;
+	box-shadow: none;
+	font-size: 15px;
+	height: 40px;
+}
+#custom-search-input button {
+	margin: 2px 0 0 0;
+	background: none;
+	box-shadow: none;
+	border: 0;
+	color: #666666;
+	padding: 0 8px 0 10px;
+	border-left: solid 1px #ccc;
+}
+#custom-search-input button:hover {
+	border: 0;
+	box-shadow: none;
+	border-left: solid 1px #ccc;
+}
+#custom-search-input .glyphicon-search {
+	font-size: 15px;
+	color: #1268b1;
+}
+.search-box-cont {
+	float: right;
+}
+.search-box-cont .ms-srch-sbLarge {
+	height: 40px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 6px;
+    padding: 10px 0px;
+    display: block;
+    }
+.main-search-cont .ms-srch-sb-searchLink img {
+	display: none;
+}
+.search-box-cont .ms-srch-sbLarge > .ms-srch-sb-searchLink img {
+	display: none !important;
+}
+.main-search-cont {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.search-box-cont .ms-srch-sbLarge > input {
+	width: 88%;
+	font: 16px calibri_regular;
+	box-sizing: border-box;
+	height: 20px;
+	color: #595955;
+	padding: 3px 40px 3px 5px;
+	margin: 0px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 3px 0 0 3px;
+	border-right: solid 1px #595955;
+}
+a#ctl00_g_711db10d_45d8_460f_b402_afb64911bbac_csr_SearchLink:before{
+	content: '\f002';
+    font-family: FontAwesome;
+    position: absolute;
+    color: #0067B0;
+    font-size: 16px;
+    bottom: 8px;
+    left: 10px;
+    color: #0067b0;
+    
+    }
+    
+.ms-srch-sbLarge input:after {
+	content: " | ";
+	padding-left: 18px;
+}
+.search-box-cont .ms-srch-sbLarge > .ms-srch-sb-searchLink{
+    height: 30px;
+    width: 30px;
+}
+.search-box-cont #SearchOptions {
+	clear: both;
+	display: block;
+}
+.ms-srch-sbLarge-link {
+	float: right;
+	margin-left: 0px;
+	margin-top: 3px;
+}
+.ms-qSuggest-listItem {
+	padding: 5px 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font: 12px calibri_regular;
+	color: #6b6b6b;
+	cursor: pointer;
+}
+.ms-qSuggest-list {
+	cursor: pointer;
+}
+.ms-qSuggest-listItem b {
+	font: 12px calibri_bold;
+}
+.ms-shadow {
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.47);
+}
+.ms-qSuggest-container {
+	border: none;
+	padding: 5px 1px;
+	margin: 10px 0px 0px -1px;
+	font: 12px calibri_regular;
+	color: #6b6b6b;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 5px;
+}
+div#AutoCompContainer {
+	background: white;
+	border-radius: 0 0 3px 3px;
+	border: solid 1px #b5b5b5;
+}
+.ms-srch-sb {
+	display: block !important;
+}
+.ms-srch-sb-border:hover {
+	border: none !important;
+}
+.ms-srch-sb-borderFocused {
+	border: none !important;
+}
+.ms-mpSearchBox {
+	width: 100%;
+}
+.ms-srch-sb > .ms-srch-sb-searchLink {
+	margin-left: -1px;
+	height: 20px;
+	width: 20px;
+	top: 10px;
+	position: relative;
+	left: 30px;
+}
+.ms-srch-sb-searchImg {
+	left: -37px;
+	top: -57px;
+	position: absolute;
+}
+.ms-srch-sb-navImg {
+	display: none;
+}
+.ms-srch-sb-border {
+	border: none;
+}
+/********* Search Box CSS Ends here ******************/
+/********* Notification or Alerts CSS Starts here ******************/
+.notification_wrapper {
+	float: left;
+	width: 100%;
+}
+.notification_strip {
+	background: #F89F6D;
+	    padding: 8px 15px 0 0px;
+	float: left;
+	width: 100%;
+	min-height: 37px;
+}
+.notofication_content {
+	float: left;
+	margin-top:0px;
+}
+.notification_strip i {
+     color: #000;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 1px #000;
+    float: left;
+    font-size: 10px;
+    padding: 4px 4px;
+}
+.notification_iconbox {
+	float: left;
+	margin-left:20px;
+}
+.notofication_content ul {
+	list-style-type: none;
+	padding-left: 0px;
+	float: left;
+	margin: 0px !important;
+}
+li#etTitle{
+	max-width: 625px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li#etDepartment{
+	max-width: 285px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li#etDate{
+	max-width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.notofication_content ul li:before {
+	content: " | ";
+	padding-left: 18px;
+	padding-right:25px;
+	color:#000;
+}
+.notofication_content ul li:first-child:before {
+	content: none;
+}
+.notofication_content ul li {
+	float: left;
+	padding-right: 10px;
+	margin-left: 0px;
+	color: #000;
+	font-family: calibri_bold;
+	font-size: 14px;
+}
+.notofication_content ul li:first-child {
+	margin-left: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 700px;
+    overflow: hidden;
+}
+#custom-search-input ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #333;
+	opacity: 1;
+   /* Firefox */
+}
+.notofication_content ul li:last-child {
+	border: none;
+}
+.notofication_content ul li a {
+	color: #000;
+	text-decoration: none;
+	transition: all 0.5s;
+	font-family: 'calibri_bold';
+}
+.close_notification {
+	float: left;
+}
+.close_notification i {
+   	border: solid 1px #000;
+    height: 15px;
+    width: 15px;
+    padding: 1px 3px;
+    font-size: 9px;
+    margin-top: 2px;   
+    }
+
+	.notofication_content .carousel-control.right {
+    right: -138px;
+    left: auto;
+	margin-left: 10px;
+    background-image: none;
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.notofication_content .carousel-control.left {
+    background-image: none;
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.notofication_content .carousel-control { 
+   position: none;
+    top: 3px;
+    bottom: 0;
+    left: 746px;
+    width: 0%;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    /* text-shadow: 0 1px 2px rgba(0,0,0,.6); */
+    filter: alpha(opacity=50);
+    opacity: 1;
+    text-shadow:none;
+    
+}
+.notofication_content .carousel-control.left {
+     background-image: none;
+    
+}
+.notofication_content .carousel-control{position:inherit;}
+.notofication_content .carousel-control a.carousel-control_right,.notofication_content .carousel-control a.carousel-control_left{position:inherit;}
+.arrow_container{margin-left: 15px;margin-top: -2px;margin-right:15px;}
+/********* Notification or Alerts CSS Ends here ******************/
+/********* Global Navigation Starts here ******************/
+
+
+/********* Global Navigation Ends her ******************/
+/******* Header CSS Ends here ***********/
+
+/********* All Home Page CSS Starts Here ******************/
+/********* KPI's Star Incentives CSS Starts here ******************/
+h2.bold_heading {
+	font-size: 22px;
+	color: #000;
+	font-family: 'calibri_bold';
+	margin: 0px;
+	width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+span.fade_heading {
+	font-family: 'calibri_regular';
+	color: #595955;
+}
+.kpis {
+	float: left;
+	margin-top: 15px;
+	width:100%;
+}
+h2.normal_heading {
+	font-size: 20px;
+	color: #000;
+	font-weight: normal;
+}
+.star_incentive {
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+}
+.main_points {
+	float: left;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-left: 12px;
+}
+.main_points:before {
+	content: '';
+	width: 0;
+	height: 66%;
+	position: absolute;
+	border: 1px solid #6b6b6b;
+	top: 14px;
+	left: 0px;
+}
+h4.mainpoint_heading {
+	font-size: 24px;
+	font-family: 'calibri_bold';
+	margin: 0px 0px;
+	padding-left: 0px;
+	width: 190px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
+}
+h4.mainpoint_heading.blue{
+	width: 120px;
+}
+.featurebox_heading {	
+	font-family: 'calibri_bold';
+	margin: 0px 0px;
+	padding-left: 0px;
+	line-height: initial !important;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+h4.feature_orangeheading {
+	font-size: 24px;
+	color: #F89F6D;
+	font-family: 'calibri_bold';
+	margin: 0px 0px;
+}
+.main_points p {
+	margin-bottom: 0px;
+	font-size: 18px;
+	color: #595955;
+	font-family: 'calibri_regular';
+	width: 190px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
+}
+.kpis .main_points p{
+	width: 120px;
+}
+.middle_section {
+	margin-top: 10px;
+}
+/********* KPI's Star Incentives CSS Ends here ******************/
+/********* KPCU Home News CSS Starts here ******************/
+.news_slider .item img {
+	width: 77% !important;	
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.owl-nav button.owl-prev {
+	position: absolute;
+	left: 0px;
+	background: red;
+	text-align:left;	
+}
+.owl-nav button.owl-next {
+	position: absolute;
+	right: 0px;
+	text-align:right;
+}
+.owl-nav button span {
+	background: #595955;
+	padding: 2px;
+	color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.owl-carousel p {
+	padding: 5px 30px 0px 30px;
+	word-wrap: break-word;
+	font-family: 'calibri_bold';
+	line-height: 1.09;
+	font-size: 14px;
+	overflow:hidden;
+	height:50px;	
+}
+.owl-item a{
+	color: #595955;
+	transition:all 0.5s;
+}
+.owl-item a:hover{
+	color:#F89F6D;
+}
+.news-wrapper {	
+	margin-top: 30px;
+}
+.news_slider {
+	border-top: 0px !important;	
+	border: solid 2px #c7c7c7;
+	height:160px;	
+}
+.NewsContainer {
+	position: relative;
+}
+.newsbannr_overlay {
+    height: 299px;
+    background: #00000061;
+    position: absolute;
+    z-index: 1;
+    width: 96.5%;
+    float: left;
+    margin-top: -35.5%;
+}
+
+.NewsBannerImage img {
+	width:100%;
+}
+.owl-dots {
+	display: none;
+}
+.NewsCategory {
+	margin-bottom: 10px;
+}
+.news_slider .item img {
+    height: 80px;
+}
+.news_btn {
+	padding: 3px;	
+	background: #699BC6;
+	border-radius: 3px;
+	font-size: 12px;
+	font-family: 'calibri_bold';
+	color:#ffffff !important;
+	border:none;
+}
+.NewsLocation {
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+}
+.NewsPublishedDate {
+    float: left;
+    border-right: solid 2px #fff;
+    padding-right: 10px;
+    color: #fff;
+}
+.NewsDetails{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	z-index: 11;	
+}
+.NewsTitle{
+	min-height:92px;
+}
+.NewsTitle a h2:hover{	
+	color: #F89F6D !important;
+}
+.NewsTitle h2{
+	margin-top:0px;
+	font-family: 'calibri_bold';
+	color:#fff;
+	transition:all 0.5s;	
+}
+.allnews{
+	position: relative;
+	top: 50px;
+	text-align:right;
+	font-family: 'calibri_bold';
+}
+.allnews a {
+	color: #F89F6D;
+	text-decoration: none;
+}
+
+/************** News Carousel CSS Starts Here *********************/
+.owl-carousel, .owl-carousel .owl-item {
+	-webkit-tap-highlight-color: transparent;
+	position: relative;
+}
+.owl-carousel {
+	display: none;
+	width: 100%;
+	z-index: 1;
+}
+.owl-carousel .owl-stage {
+	position: relative;
+	-ms-touch-action: pan-Y;
+	touch-action: manipulation;
+	-moz-backface-visibility: hidden;
+}
+.owl-carousel .owl-stage:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.owl-carousel .owl-stage-outer {
+	position: relative;
+	overflow: hidden;
+	-webkit-transform: translate3d(0,0,0);
+}
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+}
+.owl-carousel .owl-item {
+	min-height: 1px;
+	float: left;
+	-webkit-backface-visibility: hidden;
+	-webkit-touch-callout: none;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+	display: none;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+	display: block;
+}
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	background: 0 0;
+	color: inherit;
+	border: none;
+	padding: 0!important;
+	font: inherit;
+	outline: none;
+	top:45%;
+}
+.owl-carousel.owl-loading {
+	opacity: 0;
+	display: block;
+}
+.owl-carousel.owl-hidden {
+	opacity: 0;
+}
+.owl-carousel.owl-refresh .owl-item {
+	visibility: hidden;
+}
+.owl-carousel.owl-drag .owl-item {
+	-ms-touch-action: none;
+	touch-action: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+.owl-carousel.owl-grab {
+	cursor: move;
+	cursor: grab;
+}
+.owl-carousel.owl-rtl {
+	direction: rtl;
+}
+.owl-carousel.owl-rtl .owl-item {
+	float: right;
+}
+.owl-carousel .animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+	z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+	z-index: 1;
+}
+.owl-carousel .fadeOut {
+	animation-name: fadeOut;
+}
+@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}
+.owl-height {
+	transition: height .5s ease-in-out;
+}
+.owl-carousel .owl-item .owl-lazy {
+	opacity: 0;
+	transition: opacity .4s ease;
+}
+.owl-carousel .owl-item img.owl-lazy {
+	transform-style: preserve-3d;
+}
+.owl-carousel .owl-video-wrapper {
+	position: relative;
+	height: 100%;
+	background: #000;
+}
+.owl-carousel .owl-video-play-icon {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	background: url(owl.video.play.png) no-repeat;
+	cursor: pointer;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	transition: transform .1s ease;
+}
+.owl-carousel .owl-video-play-icon:hover {
+	-ms-transform: scale(1.3,1.3);
+	transform: scale(1.3,1.3);
+}
+.owl-carousel .owl-video-playing .owl-video-play-icon, .owl-carousel .owl-video-playing .owl-video-tn {
+	display: none;
+}
+.owl-carousel .owl-video-tn {
+	opacity: 0;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: opacity .4s ease;
+}
+.owl-carousel .owl-video-frame {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+/************** News Carousel CSS Ends Here *********************/
+/********* KPCU Home News CSS Ends here ******************/
+/********* Happenings CSS Starts here ******************/
+.happening_box{
+	position:relative;
+}
+.happening_box .view_morebox, .executive-wrapper .view_morebox, .whatsnew-wrapper .view_morebox , .bravo-wrapper .view_morebox{
+    float: right;
+    width: 140px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.executive_name{
+	font-size: 16px;
+    font-family: 'calibri_bold';
+    color: #0067B0;
+    margin: 0px;
+}
+span.eventtitle {
+	font-family:'calibri_bold';
+	font-size: 16px;	
+	color: #000;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	transition:all 0.5s;
+	float:left;
+}
+a span.eventtitle:hover{
+	color:#F89F6D;
+}
+.ddlhappening {
+	position: absolute;
+	right: 20px;
+}
+.happeningcategory {
+	margin-bottom: 5px;
+}
+.search .main_search {
+	float: left;
+	padding: 7px 0 7px 5px;
+	border: 0;
+	outline: none;
+	margin: 0;
+	width: 350px;
+}
+.ddlhappening select {
+	float: left;
+	border: 0;
+	outline: none;
+	padding: 7px 10px 7px 10px;
+	margin: 0;
+	text-align-last: right;
+	width: 100%;
+}
+.event_wrapper {
+	float: left;
+	height: 400px;
+    overflow: hidden;
+    width:100%;
+}
+.event_box {
+	border-bottom: solid 1px #dcdcdc;
+	margin-bottom: 5px;
+	float: left;
+	width: 100%;
+	padding: 10px 0px;
+}
+.eventdetails_wrapper {
+	float: left;
+	width: 100%;
+}
+.eventtitle_container{
+	float: left;
+    width: calc(100% - 110px);
+    width: -webkit-calc(100% - 30%);
+	width: -moz-calc(100% - 30%);
+}
+.eventDate {
+	padding:0px;
+    float: left;   
+    margin-right:10px;   
+}
+.event_box:last-child {
+	border: none;
+}
+span.big_date {
+	font-size: 30px;
+	float: left;
+	width: 100%;
+	font-family: 'calibri_bold';
+	color: #0067B0;
+	padding: 0px;
+	margin: 0px;
+}
+span.small_month {
+	font-size: 10px;
+	font-family: 'calibri_bold';
+	line-height: 1px;
+	float: left;
+}
+.from_date {
+	float: left;
+	width: 40%;
+}
+span.month {
+	float: left;
+	line-height: 10px;
+	font-size:14px;
+}
+.to_date {
+	float: left;
+	margin-left: 5px;
+}
+.dash {
+	float: left;
+	width: 10%;
+}
+span.small_date {
+	font-size: 15px;
+	font-family: 'calibri_bold';
+	color: #0067B0;
+	float: left;
+	width: 100%;
+	float: left;
+}
+.eventdate_container {
+	float: left;
+	width:100%;
+	border-right: solid 1px #d6d6d6;
+}
+.event_shotnote {
+	font-family: 'calibri_bold';
+	font-size: 15px;
+	float: left;
+}
+span.time {
+	font-size: 12	px;
+	float: left;
+	font-family: 'calibri_regular';
+}
+span.time i, span.global i {
+	font-size: 12px;
+	color: #1d67b1;
+}
+span.global {
+	float: left;
+	margin-left: 15px;
+	font-size: 14px;
+	font-family: 'calibri_regular';
+}
+/********* Happenings CSS Ends here ******************/
+/********* Executive Corner CSS Starts here ******************/
+.executive-wrapper.featured_box {
+	height: 390px;
+	position: relative;
+}
+.executive_corner {
+	padding: 10px;
+	min-height: 300px;
+	background: #ffffff;
+	float: left;
+	margin-top: 30px;
+}
+.playerVideo video {	
+  	margin:0;
+  	width: 100%;
+}
+.exemsg_VideoText {	
+	padding: 5px 15px;
+    height: 70px;
+    overflow: hidden;	
+}
+.exemsg_Text{
+	padding: 0;
+}
+.exemsg_Image{
+	padding: 0;
+	
+}
+.exemsg_Image img{
+	width:100%;
+	height:200px;
+}
+.exemsg_Text{
+	padding: 0;
+}
+
+small.date {
+    font-size: 14px;
+    color: #595955;
+    margin-top:10px 0;
+}
+.exemsg_Text p{
+    padding: 0 0px;
+   
+}
+.exemsg_PublishDate{
+	margin-top:10px;
+}
+h3.caption_text {
+	font-size: 20px;
+	color: #c6344b;
+	font-family: 'calibri_bold';
+	margin-bottom: 0px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 350px;
+    margin-left: 0px;   
+    margin-top:0px; 
+}
+
+/******* The Old design CSS (Use when ever you need) *******/
+/*.executive_details {
+	width: 100%;
+}
+.executive_details p {
+	float: left;
+}
+p#executiveCornerDesc {
+	margin-top: 37px;	
+}
+.executive_infobox {
+	float: left;
+	margin-top: 15px;
+	min-height: 243px;
+}
+.executive_photo {
+	height: 125px;
+	width: 95px;
+}
+small.date {
+	font-size: 14px;
+	color: #595955;
+	font-family: 'calibri_regular';
+}*/
+/******* The Old design CSS (Use when ever you need) *******/
+/********* Executive Corner CSS Ends here ******************/
+/********* Bravo CSS Starts here ******************/
+
+.bravo-wrapper.featured_box {
+	height:390px;
+	position: relative;	
+}
+.bravo_star {
+	padding: 10px;
+	min-height: 300px;
+	background: #ffffff;
+	float: right;
+	margin-top: 30px;
+}
+.bravo_winner {
+	float: left;
+	padding-right:10px;
+}
+.bravo_winner img {
+	width: 72px !important;
+	height: 72px !important;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+.bravo_winnerinfo {	
+	float: left;
+	width: 70%;
+}
+.bravo_winnerinfo h3 {
+	margin: 10px 0px 5px 0px;
+	border-bottom: solid 1px #d0d0d0;
+	float: left;
+	width: 100%;
+	font-family: 'calibri_bold';   
+    color: #595955;
+    font-size:16px;
+    padding-bottom:5px;
+}
+.bravo_for{	
+	margin-top: 10px;
+	float: left;
+	width: 100%;	
+}
+.bravo_for img {
+	float: left;
+	margin-right: 10px;
+	height: 24px;
+	width: 19px !important;
+}
+.recognition {
+	font-size: 16px;	
+	font-family: 'calibri_bold';
+	color: #0067B0;
+	margin:0px;
+}
+.bravo_note {
+	margin-top: 10px !important;
+	padding: 0px;
+	min-height: 39px;
+	width:100%;
+	float:left;
+}
+.bravo_creator {
+	font-size: 16px;
+	font-family: 'calibri_bold';
+	color: #595955;
+	float:left;
+}
+.bravo_actions a {
+    margin-right: 10px;
+    color: #0067B0;
+    float: left;
+    border-bottom: solid 1px #0067b0;
+    }
+.bravo_carousel {
+	float: left;
+	height: 305px;
+    width: 100%;
+}
+.bravo_actions {
+    margin-top: 10px;
+   	float: left;
+    font-size: 12px;
+    margin-top: 28px;}
+
+.bravo_carousel .carousel-indicators {
+	position: absolute;
+	bottom: -60px;
+	left: 0%;
+	z-index: 15;
+	width: 60%;
+	padding-left: 0;
+	margin: 0px;
+	text-align: left;
+	list-style: none;
+}
+.bravo_carousel .carousel-indicators li {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 1px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #0067B0;
+	border-radius: 10px;
+}
+.bravo_carousel .carousel-indicators li.active {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 1px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #000;
+	border-radius: 10px;
+	background: #0067B0;
+}
+.bravo_carousel .carousel-control.right, .bravo_carousel .carousel-control.left {
+	display: none;
+}
+/********* Bravo CSS Ends here ******************/
+/********* WhatsNew CSS Starts here ******************/
+.whatsnew-wrapper.featured_box {
+	height: 390px;
+	position: relative;	
+}
+.whatsnewitem {
+	float: left;
+	border-bottom: solid 1px #ddd;
+	width: 100%;
+	margin-top: 8px;
+}
+.whatsnewsource {
+	margin-bottom:8px;
+}
+.whatsnew-wrapper .whatsnewitem:last-child {
+	border: none;
+}
+.whatsnew_shortinfo p {
+	margin-bottom: 0px;
+}
+.WhatsNewContent {	
+	float: left;
+	height:305px;
+	width:100%;
+} 
+span.whatsnewTitle {
+	font-family:'calibri_bold';
+	font-size: 16px;	
+	color: #000;
+	width: 100%;
+	margin: 0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	transition:all 0.5s;
+	float:left;
+}
+a span.whatsnewTitle:hover {
+    color: #F89F6D;
+}
+.WhatsNewContent .whatsnewitem:first-child {
+	margin-top: 0px;
+}
+/********* WhatsNew CSS Ends here ******************/
+/********* BirthDay Webpart CSS Starts here ******************/
+.birthday-wrapper {
+	margin-top: 30px;
+	position: relative;
+}
+.birthday-wrapper .viewmore_text {
+	color:#ffffff;
+}
+.birthday-wrapper .viewmore_text a {
+	color: #0067B0;
+	transition: all 0.5s;
+}
+.birthday-wrapper .viewmore_text a:hover {
+	color: #F89F6D !important;
+}
+.birthday_carousel {
+	float: left;
+	width: 100%;
+	height: 270px;
+	box-shadow: 0px 1px 5px 2px #e2e2e2;
+	background: #3c89bf;
+	
+}
+.birthday_carousel .carousel-control_left,.birthday_carousel .carousel-control_right{
+	background:none;
+	opacity:1;
+}
+.birthday_carousel .carousel-control_right span{
+	padding: 6px 8px;
+    background: #595959;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    color: #fff;
+    font-size:12px;
+    }
+.birthday_carousel .carousel-control_left span{
+	padding: 6px 8px;
+	background:#595959;
+	position:absolute;
+	left:0px;
+	top: 60px;
+	color:#fff;
+	font-size:12px;
+}
+
+.birthday_carousel a {
+	transition: all 0.5s;
+	color: #0067B0;
+}
+.birthday_carousel a:hover {
+	color: #F89F6D;
+}
+ul.bday_list {
+	list-style-type: none;
+	height: 166px;
+}
+ul.bday_list li {
+	float: left;
+	margin-left: 20%;
+}
+.bday_info {
+    width: 20%;
+}
+.bday_buddy img {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	border: solid 1px #fff;
+}
+h3.carousel_heading {
+	color: #fff;
+	padding: 10px;
+	margin-top: 0px;
+	font-family: 'calibri_bold';
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.birthday_carousel p {
+	color: #fff;
+	font-family: 'calibri_regular';
+}
+span.buddy_name {
+	color: #fff;
+	font-family: 'calibri_bold';
+	font-size: 14px;
+}
+ul.bday_list li {
+	float: left;
+	margin-left: 60px;
+	text-align: center;
+	margin-top: 20px;
+}
+ul.bday_list li:first-child {
+	margin-left: 0px;
+}
+/********* BirthDay Webpart CSS Ends here ******************/
+/********* Scoop Webpart CSS Starts here ******************/
+.scoop_wrapper {
+	float: left;
+	height: 470px;
+	width:100%;
+}
+.scoop_box {
+	background: #fff;
+	float: left;
+}
+.scoop_heading, .scoopauthor{
+	float: left;
+	padding-right: 13px;
+}
+.scoop_heading h3.featurebox_heading{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width:200px;
+}
+
+.scoop_box h3, .scoopbranch {
+	font-family: 'calibri_regular';
+	border-left: solid 2px #6b6b6b;
+	padding-left: 10px;
+	margin:0px;
+	float:left;	
+}
+span.auther {
+	font-size: 14px;
+	font-family: 'calibri_regular';
+}
+.scoopItem {
+	float: left;	
+	border-bottom: solid 1px #dcdcdc;
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.scooptitle {
+	font-family:'calibri_bold';
+	font-size: 16px;	
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+}
+.scooptitle a{
+	color: #000 !important;  
+}
+.scooptitle a:hover{
+	color:#F89F6D !important;	
+}
+.scoop_wrapper .scoopItem:last-child {
+	border: none;
+}
+.scoopcategory .news_btn{
+	background-color: #699BC6;
+}
+.scoopcategory, .scoopDetailsWrapper .scooptitle{
+	margin-bottom:8px;
+}
+.scoopDetailsWrapper .scooptitle h2 {
+	margin:0px;
+}
+.scoopDetailsWrapper .scoopdetailsItem {
+	margin-top:5px;
+}
+.scoopDetailsWrapper .scoopcolval {
+	font-family:'calibri_bold';
+	padding-right: 2px;
+}
+.scoopDetailsWrapper .scoopAuthorBranch {
+	margin-bottom:8px;
+	overflow:hidden;
+	width:100%;	
+}
+/********* Scoop Webpart CSS Ends here ******************/
+/********* Scoop Archive CSS Starts here ******************/
+.scooparchivedetails {
+	width:100% !important;
+}
+.scooparchiveitem{
+	float: left;
+    min-height: 70px;
+    width: 100%;
+   	margin:0px 0px 20px 0px;
+   	padding:0px;   
+}
+.scooparchiveitem .newsarchiveTitle{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+/********* Scoop Archive CSS Ends here ******************/
+.featured_box .event_box::last-child {
+	border: none;
+}
+.nav-tabs {
+	border-bottom: 2px solid #DDD;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	border-width: 0;
+}
+.nav-tabs > li > a {
+	border: none;
+	color: #595955;
+	font-family: 'calibri_bold';
+	font-size: 16px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+	border: none;
+	color: #F89F6D;
+	background: transparent;
+	font-family: 'calibri_bold';
+	font-size: 16px;
+}
+.nav-tabs > li > a::after {
+	content: "";
+	background: #F89F6D;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: -1px;
+	transition: all 250ms ease 0s;
+	transform: scale(0);
+}
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+	transform: scale(1);
+}
+.tab-nav > li > a::after {
+	background: #21527d none repeat scroll 0% 0%;
+	color: #fff;
+}
+.tab-pane {
+	padding: 10px 0;
+}
+.tab-content {
+	padding: 0;
+}
+.document_box {
+	background: #fff;
+	float: left;
+	margin-top: 30px;
+}
+.document_file {
+	float: left;
+	width: 10%;
+	text-align: left;
+}
+.document_bx {
+	float: left;
+	border-bottom: solid 1px #ddd;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+}
+h5.document_heading {
+	font-size: 15px;
+	font-family: 'calibri_bold';
+	margin-top: 0px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+}
+.document_shortinfo {
+	float: left;
+	width: 80%;
+	word-break: break-all;
+}
+.contacts_commitmentbox {
+	width: 100%;
+	background: #fff;
+	margin-top: 30px;
+}
+.contactscommitemtsPopUp th{
+background: #0067b0;
+color: #fff;	
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body{
+	border:none !important;
+}
+h3.cnc_subject_name {
+float: left;
+color: #0067b0;
+font-family: 'calibri_bold';
+font-size: 15px;
+margin-top: 0px;
+
+}
+.commitment_elements{
+float: left;
+font-family: 'calibri_bold';
+font-size: 12px;
+
+}
+.commitment_elements span{
+font-family: 'calibri_bold' !important;
+font-size: 12px !important;
+
+}
+.commitment_strip {
+background: #fff;
+float: left;
+width: 100%;
+padding: 15px 10px 5px 10px;
+margin-bottom: 3px;
+}
+.title_box {
+    background: #0067b0;
+    float: left;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0px;
+    color: #fff;
+    margin-top:30px;
+}
+
+.panel-heading .accordion-toggle:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e252";
+	float: left;
+	color: #e41515;
+	margin-right: 10px;
+	font-size: 10px;
+	margin-top: 4px;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+	/* symbol for "collapsed" panels */
+    content: "\e250";
+   /* adjust as needed, taken from bootstrap.css */
+}
+.panel-default {
+	border: none !important;
+	background: none!important;
+	box-shadow: none!important;
+}
+.panel-default > .panel-heading {
+	background: none !important;
+	padding: 5px 15px;
+}
+ul.commitment_list {
+	padding-left: 0px;
+}
+.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+	color: inherit;
+	font-size: 14px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	border: none !important;
+}
+.show_menu {
+	display: block !important;
+}
+.hide_menu {
+	display: none!important;
+}
+div#MyKPCU-Menu ul li ul li a {
+	max-width: 250px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/* styles for homepage starts here */
+/* hr department styles starts here */
+ h2.banner_heading{
+	margin-top:0px;
+	color:#fff;
+} 
+.department_banner img {
+	width: 100% !important;
+}
+.departmental_featurebox .card{
+	height:400px !important;
+}
+.dept_banner p {
+	width: 60%;
+	color: #fff;
+}
+.departmental_featurebox {
+	background: #fff;
+	margin-top: 30px;
+	float: left;
+}
+.onePageLayoutMain .departmental_featurebox .news_list img {
+    width: 80%;
+    height: auto;
+}
+.news_list img {
+	float: left;
+	margin-right: 10px;
+}
+.announcements-wrapper .news_list {
+    padding: 16px 10px;
+}
+.small_card{
+	min-height: 155px;
+
+}
+.departmental_featurebox .news_list:last-child {
+    border: none;
+}
+.departmental_featurebox .ms-promlink-button-left {
+    left: -132px;
+    top: -236px;
+    position: absolute;
+}
+.departmental_featurebox .ms-promlink-button-right-disabled {
+    left: -185px;
+    top: -232px;
+    position: absolute;
+}
+.departmental_featurebox .ms-promlink-button-right {
+    left: -203px;
+    top: -232px;
+    position: absolute;
+}
+.departmental_featurebox .ms-promlink-button-left-disabled {
+    left: -149px;
+    top: -236px;
+    position: absolute;
+}
+.departmental_featurebox .news_list img {
+	width: 55%;
+    height: auto;
+}
+.KeyContacts-wrapper .news_list img{
+	width:72px;
+	height:72px;
+}
+.news_image{
+	display: inline-block;
+    overflow: hidden;
+    float: left;
+    	}
+.news_image img{
+	width:100%;
+}
+.news_list p {
+	font-size: 12px;
+	margin: 0px;
+}
+span.gray {
+	color: #a4a4a4;
+	font-size: 12px;
+}
+.dept_featurebgimg h3 {
+	color: #fff;
+	margin: 0px;
+	padding: 3px 10px;
+	font-size: 20px;
+}
+h3.name {
+	font-size: 14px;
+	font-family: 'calibri_bold';
+	margin: 0px;
+	
+}
+span.menu_name {
+	font-family: 'calibri_bold';
+	color: #000;
+	font-size: 16px;
+	text-overflow: ellipsis;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    float:left;
+}
+.document_shortinfo a {
+	color: #000;
+	text-decoration: none;
+	font-family: 'calibri_bold';
+	font-size: 16px;
+}
+.recently-updated-doc-wrapper {
+	position: relative;
+	
+}
+.recently-updated-doc-wrapper .card ,.deptnews-wrapper .card ,.KeyContacts-wrapper .card{
+		height:445px;
+		float:left;
+}
+.card .nav>li>a{
+	padding:0px;
+	font-family: 'calibri_regular';
+}
+.card .nav-tabs > li.active > a{
+	font-family: 'calibri_bold';
+}
+.card .nav li{
+	margin-right:30px;
+	margin-top:10px;
+}
+
+.recently-updated-doc-wrapper .document_bx:last-child {
+	border: none;
+}
+.viewmore_text a {
+	color: #0067B0;
+	text-decoration: none;
+}
+.the-scoop-wrapper {
+	position: relative;
+}
+.owl-item active {
+	width: 204.5px !important;
+	margin-right: 0px!important;
+}
+.contacts-wrapper a {
+	color: #595955;
+	font-family: 'calibri_regular';
+	font-size: 14px;
+}
+.contacts-wrapper ul.commitment_list {
+	padding-left: 20px;
+	list-style-type:none;
+}
+.contacts-wrapper ul.commitment_list li {
+	padding: 5px 0px;
+}
+.contacts-wrapper ul.commitment_list li:before {
+    content: '\f111';
+    font-family: FontAwesome;
+    /* position: absolute; */
+    padding-top: 3px;
+    color: #0067B0;
+    font-size: 9px;
+    left: 182px;
+    margin-right:10px;
+    color:#595955;
+}
+.contacts-wrapper ul.commitment_list li a {
+	color: #595955;
+	font-family: 'calibri_regular';
+	font-size: 12px;
+}
+.contacts-wrapper .panel-body{
+	padding: 0px 15px;
+}
+.contacts-wrapper ul.commitment_list li a:hover{
+	color:#F89F6D;
+}
+.contacts-wrapper ul.commitment_list li a:hover:before{
+	color:#F89F6D;
+}
+.ms-microfeed-rightAlignedDiv {
+	position: absolute;
+	right: 0px;
+	top: -7px;
+}
+/*added for news feed section start*/
+.activity-feed-wrapper textarea.ms-microfeed-rootOrReplyPostBox {
+	font-family: 'calibri_regular';
+	font-size: 16px;
+	color: #595955;
+	height: 80px;
+	padding: 10px 10px;
+}
+.activity-feed-wrapper .ms-microfeed-focusBox{
+	border-radius:5px;
+}
+.activity-feed-wrapper .ms-microfeed-focusBoxNoFocus {
+	height: 80px;
+}
+.activity-feed-wrapper .ms-microfeed-addImageButtonImageParent img {
+	display: none;
+}
+.activity-feed-wrapper .ms-microfeed-addImageButtonImageParent {
+	background: url(../images/attachment.png) top right;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+}
+.activity-feed-wrapper button.ms-microfeed-attachmentButton.ms-microfeed-button {
+    background: none;
+    position: absolute;
+    top: 45%;
+    right: 3%;
+}
+.activity-feed-wrapper .ms-microfeed-addImageButtonImageParent:focus {
+	outline: none;
+}
+.activity-feed-wrapper div#ms-microblogdiv:focus {
+	outline: none !important;
+}
+.activity-feed-wrapper .ms-microfeed-focusBoxInFocus, .activity-feed-wrapper .ms-microfeed-focusBoxNoFocus:hover {
+	border: 1px solid #ababab;
+}
+.ms-textLarge {
+	font-family: calibri_regular !important;
+	font-size:16px !important;
+}
+.ms-microfeed-postBody {
+	white-space: pre-wrap;
+	font-size: 14px;
+	font-family: 'calibri_regular';
+	color: #595955;
+}
+.ms-microfeed-rootText {
+	max-width: 100% !important;
+}
+.ms-spimn-imgSize-5x48 {
+	display: none;
+}
+.ms-peopleux-userImgWrapper {
+	border-radius: 50%;
+}
+.ms-microfeed-userThumbnailAreaReplyPadding img {
+	border-radius: 50%;
+}
+.activity-feed-wrapper div.s4-wpcell-plain:focus {
+	outline: none !important;
+}
+.activity-feed-wrapper .ms-metadata, .ms-descriptiontext, .ms-secondaryCommandLink {
+	font-family: 'calibri_regular' !important;
+	font-size: 12px;
+	color: #595955 !important;
+}
+.ms-microfeed-button:focus {
+	outline: none;
+}
+.ms-microfeed-seeMoreThreadsDiv {
+	background-color: #0072c6;
+}
+.ms-commandLink, .ms-commandLink:visited, .ms-commandGlyph, .ms-commandGlyph:visited {
+	color: #fff;
+}
+.ms-microfeed-button, .ms-microfeed-button:hover, .ms-microfeed-button:active {
+	color: #fff;
+}
+.activity_feebox {
+	height: 1184px !important;
+    position: relative;
+    overflow: hidden;
+    width: 100% !important;
+    }
+.activity_feebox a{
+	color:#000 !important;
+	font-family: 'calibri_bold';
+	}
+.activity_feebox .ms-secondaryCommandLink, .activity_feebox .ms-secondaryCommandLink:visited, .activity_feebox.ms-commandGlyph:hover{
+	color:#0067B0 !important;
+	font-family: 'calibri_bold' !important;
+	font-size:14px;
+
+}
+.activity_feebox .ms-microfeed-fullMicrofeedDiv , .activity_feebox .ms-microfeed-microblogpart {
+    min-width: 100%;
+
+  }
+  .activity-feed-wrapper .ms-microfeed-seeMoreThreadsDiv{
+	z-index:11 !important;
+	
+}
+.activity_feebox .ms-microfeed-attachmentImage {
+    max-width: 100%;
+  }
+.ms-microfeed-fullMicrofeedDiv:focus {
+	outline: none;
+}
+.activity-feed-wrapper .ms-spimn-imgSize-5x36 {
+	display: none;
+}
+.activity-feed-wrapper .slimScrollDiv {
+    height: 940px !important;
+    position:relative !important;
+    top:30px !important;
+ 
+}
+#activityFeedSlimScroll{
+	height:910px !important;
+}
+.slimScrollBar {
+    width: 3px !important;
+}
+
+.activity_footer_strip{
+	background: #ffffffc2;
+    height: 50px;
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    width: 96.5%;
+    z-index:10;}
+
+/*added for news feed section ends*/
+.announcemnt_icon {
+	float: left;
+	width: 20%;
+	text-align: center;
+	color: #0067B0;
+}
+.announcement_shortdetails {
+	width: 80%;
+	float: left;
+}
+.announcement_detailbox .announcement_shortdetails{width:
+60%;}
+/* hr department sidebar styles starts here */
+.departmentsidebar_wrapper #sideNavBox {
+	float: left;
+	width: 100%;
+	background: #Fff;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.departmentsidebar_wrapper .ms-noList ul {
+	background: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.departmentsidebar_wrapper li.static {
+	border-bottom: solid 1px #ededed;
+}
+.departmentsidebar_wrapper .ms-core-listMenu-selected:link {
+	background: #fff !important;
+}
+.departmentsidebar_wrapper .ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
+	background: #fff;
+}
+.departmentsidebar_wrapper li.static:before {
+	content: '\f054';
+	font-family: FontAwesome;
+	position: absolute;
+	padding-top: 14px;
+	color: #0067B0;
+	font-size: 10px;
+    /* left: 16px; */
+}
+.departmentsidebar_wrapper a.breadcrumbRootNode, .departmentsidebar_wrapper a.breadcrumbCurrentNode:visited {
+	color: #595955 !important;
+	font-family: 'calibri_regular';
+	font-size: 16px;
+}
+.departmentsidebar_wrapper .ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
+	display: block;
+	padding: 10px 20px;
+	font-family: 'calibri_bold';
+	font-size: 15px;
+	font-family: 'calibri_bold';
+}
+/* hr department sidebar styles ends here */
+/* hr department styles starts here */
+/* SP Override starts here */
+body {
+	background: #f0f0f0 !important;
+	font-family: 'calibri_regular';
+}
+.ms-core-overlay {
+	background: #f0f0f0 !important;
+}
+#contentBox {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+#searchInputBox {
+	margin-bottom: 12px;
+	float: right;
+	WIDTH: 100% !important;
+}
+.news-wrapper .ms-wpContentDivSpace {
+	max-width: 350px;
+	min-width: 100%;
+}
+.ms-srch-result #Paging {
+margin:0px !important;
+}
+/*  News webpart start*/
+.ms-webpart-zone {
+	display: block !important;
+}
+div.ms-webpart-cell-vertical-inline-table {
+	display: block !important;
+}
+.ms-webpart-chrome-vertical {
+	display: block !important;
+}
+.ms-webpart-zone {
+	display: block !important;
+}
+div.ms-webpart-cell-vertical-inline-table {
+	display: block !important;
+}
+.ms-webpart-chrome-vertical {
+	display: block !important;
+}
+.ms-webpart-zone {
+	display: block !important;
+}
+div.ms-webpart-cell-vertical-inline-table {
+	display: block !important;
+}
+.ms-webpart-chrome-vertical {
+	display: block !important;
+}
+.ms-webpartzone-cell {
+	margin-bottom: 0px !important;
+}
+.activity-feed-wrapper h2#ms-titlebardiv {
+	display: none;
+}
+.activity-feed-wrapper .ms-microfeed-microblogpart {
+	max-width: 100% !important;
+}
+/*.activity-feed-wrapper button.ms-microfeed-attachmentButton.ms-microfeed-button {
+	background: none;
+	position: absolute;
+	right: 0px;
+	top: 25px;
+}*/
+.activity-feed-wrapper .ms-microfeed-feedPart {
+	min-width: 100% !important;
+}
+.activity-feed-wrapper .ms-microfeed-replyArea {
+	max-width: 100% !important;
+}
+.activity-feed-wrapper .ms-microfeed-replyBackground {
+	background-color: #ebf2f8;
+}
+
+.activity-feed-wrapper .ms-microfeed-replyArea .ms-microfeed-focusBoxNoFocus{
+	height:50px !important;
+}
+.activity-feed-wrapper .ms-microfeed-replyArea .ms-microfeed-button{
+    top: 15% !important;
+    right: 3% !important;
+}
+
+#s4-workspace {
+	overflow-x: hidden !important;
+	min-height: 100%;
+	position:relative;
+}
+
+.searchresult_container .ms-srch-sbLarge{
+    margin-top: 20px !important;
+    padding: 4px !important;
+    border: solid 1px #bfbfbf !important;
+
+}
+/* News webpart end*/
+/* Searchbox ends here*/
+/* SP Override ends here */
+/* Mega Menu Starts Here  */
+.description {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.megamenu_container {
+	background:#0072c6;
+	float: left;
+	width: 100%;
+}
+.mobile_iconbox{
+	display:none;
+}
+span.munu_name {
+	font-family: 'calibri_bold';
+	color: #000;
+	font-size: 16px;
+}
+.menu-mobile {
+	display: none;
+	padding: 20px;
+}
+.menu-mobile:after {
+	content: "\f0c9";
+	font-family: FontAwesome;
+	font-size: 2.5rem;
+	padding: 0;
+	float: right;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-25%);
+	-ms-transform: translateY(-25%);
+	transform: translateY(-25%);
+}
+.menu-dropdown-icon:before {
+	content: "\f054";
+	font-family: FontAwesome;
+	display: none;
+	cursor: pointer;
+	float: right;
+	padding: 1.5em 2em;
+	background: #fff;
+	color: #333;
+}
+.menu > ul {
+	margin: 0 auto;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	position: relative; /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */;
+	box-sizing: border-box;
+}
+.menu > ul:before, .menu > ul:after {
+	content: "";
+	display: table;
+}
+.menu > ul:after {
+	clear: both;
+}
+.menu > ul > li {
+	float: left;
+	padding: 5px 0;
+	margin: 0;
+	background: none;
+}
+.menu > ul > li:first-child a {
+	padding-left: 0px;
+}
+.menu > ul > li a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	font-family: 'calibri_bold';
+	padding: 10px 20px;
+	font-size: 16px;
+}
+.menu > ul > li:hover {
+	background: none;
+}
+div#SearchBox{
+	float:none;
+}
+.menu > ul > li > div > ul {
+	width: 152%;
+	background: #d6e7f1;
+	padding: 20px;
+	position: absolute;
+	z-index: 99;
+	left: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+	border: solid 2px #0067B0;
+	padding-left: 5%;
+	border-top: none;
+	height: 390px;
+	margin-top: 5px;
+	display: none;
+}
+.menu > ul > li > div > ul:before, .menu > ul > li > div > ul:after {
+	content: "";
+	display: table;
+}
+.menu > ul > li > div > ul:after {
+	clear: both;
+}
+.menu > ul > li > div > ul > li {
+	margin: 0;
+	padding-bottom: 0;
+	list-style: none;
+	width: 25%;
+	background: none;
+	float: left;
+}
+.menu > ul > li:hover:after {
+	content: '\f0d8';
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0px 0px 0px 10px;
+	text-decoration: none;
+	position: absolute;
+	top: 30px;
+	font-size: 26px;
+	margin-left: 3%;
+	color: #d6e7f1;
+}
+.menu > ul > li > div > ul > li a {
+	color: #000;
+	padding: 3px 0;
+	width: auto;
+	display: block;
+	font-size: 14px;
+	font-family: 'calibri_regular';
+	float: left;
+	transition: all 0.5s;
+	text-overflow: ellipsis;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+	
+}
+.menu > ul > li > div > ul > li a:hover {
+	color: #F89F6D !important;
+}
+span.editIcon {
+	position: relative;
+	top: 0px;
+	left: 8px;
+	cursor:pointer;
+}
+li.action_links ul li a i {
+	float: left;
+}
+.action_container {
+    position: absolute;
+    bottom: 30px;
+}
+.editlink_box a i {
+    height: 30px;
+    width: 30px;
+    border: solid 2px #1370b5;
+    border-radius: 50%;
+    padding: 7px 8px;
+    color: #1370b5;
+    font-size: 14px;    
+    float: left;
+}
+.editlink_box {
+    margin-left: 30px;
+    float: left;
+    width:120px;
+    height:40px;
+}
+.editlink_box a{
+	width:120px !important;
+}
+.addlink_box a i {
+    height: 30px;
+    width: 30px;
+    border: solid 2px #1370b5;
+    border-radius: 50%;
+    padding: 7px 8px;
+    color: #1370b5;
+    font-size: 14px;    
+    float: left;
+}
+.addlink_box{
+	float:left;
+	margin-left:10px;
+}
+.addlink_box a{
+	width:120px !important;
+}
+
+
+.menu > ul > li > div > ul > li > ul {
+	display: block;
+	padding: 0;
+	margin: 10px 0 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.menu > ul > li > div > ul > li > ul:before, .menu > ul > li > div > ul > li > ul:after {
+	content: "";
+	display: table;
+}
+.menu > ul > li > div > ul > li > ul:after {
+	clear: both;
+}
+.menu > ul > li > div > ul > li > ul > li {
+	float: left;
+	width: 100%;
+	margin: 0;
+	font-size: 14px;
+	text-overflow:ell
+}
+.menu > ul > li > div > ul > li > div > ul > li a {
+	border: 0;
+}
+.menu > ul > li > ul.normal-sub {
+	padding: 10px 20px;
+}
+.menu > ul > li > div > ul.normal-sub > li {
+	width: 100%;
+}
+.menu > ul > li > div > ul.normal-sub > li a {
+	border: 0;
+	padding: 1em 0;
+}
+li.action_links ul {
+	margin-top: 50px !important;
+}
+li.action_links ul li {
+	width: 50% !important;
+	float: left !important;
+}
+li.action_links ul li a {
+	width: auto !important;
+	float: left !important;
+	color: #1370b5;
+	font-family: 'calibri_bold';
+}
+li.action_links ul li a i {
+	height: 30px;
+	width: 30px;
+	border: solid 2px #1370b5;
+	border-radius: 50%;
+	padding: 7px 8px;
+	color: #1370b5;
+	font-size: 14px;
+	margin-right: 10px;
+}
+.low_opacity {
+	opacity: 0.3;
+}
+li.action_links span {
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 17px;
+	font-family: 'calibri_bold';
+	color: #0067B0;
+}
+@media only screen and (max-width: 959px) 
+{
+	.menu-container {
+		width: 100%;
+	}
+	.menu-mobile {
+		display: block;
+	}
+	.menu-dropdown-icon:before {
+		display: block;
+	}
+	.menu > ul {
+		display: none;
+	}
+	#WhoWeAre-menu{
+	width:100%;
+}
+span.menu_name{
+	width:100% !important;
+}
+	.menu > ul > li {
+		width: 100%;
+		float: none;
+		display: block;
+		border-bottom: solid 1px #e0e0e0;
+	}
+	.menu > ul > li a {
+	padding: 1.5em;
+	width: 100%;
+	color: #595959;
+    text-align: left;
+    padding-left: 0px;	
+    }
+	.menu > ul > li > div > ul {
+		position: relative;
+	}
+	.menu > ul > li > div > ul.normal-sub {
+		width: 100%;
+	}
+	.menu > ul > li > div > ul > li {
+		float: none;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.menu > ul > li > div > ul > li:first-child {
+		margin: 0;
+	}
+	.menu > ul > li > div > ul > li > ul {
+		position: relative;
+	}
+	.menu > ul > li > div > ul > li > ul > li {
+		float: none;
+	}
+	.menu .show-on-mobile {
+	display: block;
+    clear: both;
+    margin-top: 80px;
+    	}
+	.menu > ul > li:hover:after {
+		display: none;
+	}
+}
+/* Toaster starts here */
+#lblToasterSuccess {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: 0px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 79%;
+	right: 20px;
+	font-size: 17px;
+	top: 71px;
+	background: #51b749;
+	border-color: #4cae4c;
+	color: #fff;
+	border-left: solid 3px #31a029;
+	box-shadow: 0px 2px 6px 2px #cecece;
+}
+#lblToasterSuccess.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+    from {right: 0; opacity: 0;} 
+    to {right: 30px; opacity: 1;}
+}
+@keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+    from {right: 30px; opacity: 1;} 
+    to {right: 0; opacity: 1;}
+}
+@keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: 0; opacity: 1;}
+}
+/* Toaster ends here */
+/*  Mega Menu Ends Here  */
+/*////////////////////////////// middle part styles ends here*/
+/* styles for footer strip starts here */
+.footer-section {
+	background: #595955;
+    padding: 18px 0;
+    color: #FFF;
+    font-size: 16px;
+    position: relative;
+    height: 50px;
+    clear: both;
+}
+.bottom_menu{
+	float:left;
+}
+.bottom_menubox ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+.bottom_menubox ul li {
+	float: left;
+	color: #fff;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.bottom_menubox ul li:first-child {
+    margin-left: 0;
+    padding-left:0;
+    border-left: 0px;
+}
+.bottom_menubox ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.bottom_menu ul li {
+	float: left;
+	border-left: solid 1px #fff;
+}
+.social_box li {
+	border: none;
+}
+.social_box li:last-child {
+	border: none;
+}
+.middlepart {
+	height: 700px;
+}
+.social_box a {
+	transition: all 0.5s;
+}
+.kpis_section ul {
+	padding-left: 0px;
+}
+.kpis_section li {
+	border-left: solid 3px #9c9c9c;
+	padding-left: 13px;
+}
+/* styles for footer strip ends here */
+/************Refinement Webpart CSS Starts Here*********************/
+.searchresult_container .ms-webpart-zone, .searchresult_container .ms-webpart-cell-vertical, .searchresult_container .ms-webpart-chrome-vertical {
+	display: block;
+}
+.searchresult_Tabs {
+	margin: 20px 0 0 0;
+}
+.searchresult_Refiners .ms-ref-refiner #Container {
+	padding: 10px;
+	margin: 20px 0 0 0;
+	-webkit-box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.1);
+}
+.searchresult_Refiners .ms-ref-refinername:link, .searchresult_Refiners .ms-ref-refinername:visited {
+	margin: 0 0 5px;
+	width: 100%;
+}
+.searchresult_Refiners .ms-ref-unsel-shortList #Value a.ms-displayBlock:hover {
+	color: #0067B0;
+}
+.searchresult_Refiners .ms-ref-unsel-shortList, .searchresult_Refiners .ms-ref-unsel-longList, .ms-ref-allSec, .ms-ref-selSec {	
+	font-size: 14px;
+	font-family: 'calibri_regular';
+	padding-left:10px;
+}
+
+.searchresult_Refiners .ms-ref-refiner a.ms-ref-refinername div.ms-displayInlineBlock {
+	color: #0067B0;
+	display: inline-block;
+	margin: 0 0 -10px;
+	padding: 0 0 10px;
+	font-family: 'calibri_bold';
+	font-size: 16px;
+}
+.searchresult_Refiners a.ms-ref-unsel-toggle .ms-displayInlineBlock {
+	color: #0067B0;
+	font-size: 14px;
+	font-family: 'calibri_regular';
+	margin-left: 10px;
+}
+.searchresult_container .ms-srch-item-title {
+	float: left;
+}
+.searchresult_container .ms-srch-item-title .ms-srch-item-link {
+	font-family: 'calibri_bold';
+	font-size: 14px;
+	color: #595955;
+}
+.searchresult_container .ms-srch-item-path {
+	font-family: 'calibri_regular';	
+	font-size: 14px;
+	margin: 0px;
+	color: #0067B0;
+	width: 100%;	
+}
+.ms-srch-item-path-selected {
+	border: none;
+	padding:0px;
+}
+.searchresult_Refiners #Container {
+	background: #fff !important;
+}
+.searchresult_Refiners .ms-ref-refinername:link, .ms-ref-refinername:visited {
+	padding: 0px 0px 5px 0px !important;
+	border-bottom: solid 1px #d5d5d5;
+}
+.searchresult_Refiners .ms-ref-unselSec {	
+	padding-top: 10px;
+}
+
+.ms-dlg-heading, h2.ms-dlg-heading{
+	font-family: 'calibri_bold';	
+	font-size: 14px;
+
+}
+
+.ms-shadow:focus{
+	outline:none !important;
+}
+.js-callout-closeButton{
+	width: 26px !important;
+    height: 32px !important;
+    position: relative !important;
+}
+
+input[type="password"]:hover, input[type="text"]:hover, input[type="file"]:hover, input:not([type]):hover, textarea:hover, .sp-peoplepicker-topLevel:hover, .ms-inputBox:hover{
+	border-color: #d5d5d5;
+	border:none;
+}
+.ms-ref-ctrl .ms-ref-selSec .ms-ref-filterSel, .ms-ref-ctrl .ms-ref-allSec .ms-ref-filterSel{
+	color:#0067B0 !important;
+}
+.Refiners_PanelWidth{
+	display:block;
+}
+span.filter_img{
+	display:none;
+}
+.searchresult_Refiners .ms-ref-uparrow {
+	/*background: url(/_layouts/15/images/searchresultui.png?rev=44) -60px -39px no-repeat !important;   this is next arrow* */
+ 	background: url(../images/down_arrow.png) !important;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 7px;
+	width: 10px;
+	margin-top: 11px;
+}
+.searchresult_wrapper .ms-ref-downarrow {
+	background: url(../images/right_arrow.png) !important;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 10px;
+	width: 7px;
+	margin-top: 11px;
+}
+.searchresult_wrapper .handle_label {
+	color: #0067B0;
+	font-size: 14px;
+	font-family: 'calibri_regular';
+}
+.searchresult_wrapper .breadcrumb-cont a, .searchresult_wrapper .breadcrumb-cont a:hover, .searchresult_wrapper .breadcrumb-cont a:focus {
+	color: #595955 !important;
+	font-family: 'calibri_regular';
+	font-size: 14px;
+}
+.ms-ref-refiner #Value, .ms-ref-unsel-toggle, #OtherValue, #SubmitValue { 
+    width: auto !important; 
+}
+/************Refinement Webpart CSS Ends Here*********************/
+/**** Search Resluts Layout CSS Starts Here ****/
+.searchresult_container .ms-srch-result #Paging, .searchresult_container .ms-srch-result-groups, .searchresult_container .ms-srch-result #ResultFooter {
+	margin: 0px;
+}
+.refinement-btn {
+	display: block;
+	width: auto;
+	font-family: 'calibri_bold';
+	font-size: 16px;
+	color: #0067B0;
+	background: #fff !important;
+	padding: 10px;
+	margin: 20px 0 0 0;
+	-webkit-box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.1);
+}
+.refinement-btn:hover, .refinement-btn:active, .refinement-btn:focus, .refinement-btn:visited {
+	text-decoration: none !important;
+	cursor: pointer;
+	color: #0067B0;
+}
+.searchresult_container .ms-srch-result {
+	margin-top: 20px !important;
+}
+div#refinementPanel.closed {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+div#refinementPanel.fastTransition {
+	transition: 0ms;
+}
+.searchresult_Refiners #refinementPanel, #article_results {
+	transition: 300ms ease-in-out;
+}
+.searchresult_container {
+	transition: 300ms ease-in-out;
+	overflow: hidden;
+}
+.searchresult_container .ms-webpart-zone, .searchresult_container .ms-webpart-cell-vertical, .searchresult_container .ms-webpart-chrome-vertical {
+	display: block;
+}
+.searchresult_container .ms-srch-result #ResultHeader select {	
+	width: 150px;
+	height: 30px;
+	color: #595955;
+	font-family: 'calibri_regular';
+	font-size: 14px;
+}
+.searchresult_container .ms-srch-hover-wacImageContainer {
+	display: none;
+	text-align: center;
+	max-height: 150px;
+	overflow: hidden;
+	border: 1px solid #0067B0;
+	background: #f1f1f1;
+	margin-top: 11px;
+}
+.ms-srch-item-title h3 {
+	color: #595955;
+	font: 14px calibri_bold;
+	margin: 3px 3px 3px 0px;
+}
+.ms-srch-item-summary {	
+	font-size: 14px;
+	color: #595955;
+	font-family: 'calibri_regular';
+}
+.searchresult_container .ms-srch-item-highlightedText {
+	background: #ebebeb;
+	font: 14px calibri_bold;
+	padding: 0px;
+}
+.searchresult_container .ms-srch-item-summary strong.ms-srch-item-highlightedText {
+	color: #395676;
+}
+.searchresult_container .ms-srch-item {
+	padding: 5px;
+	margin: 0px;
+	width: 57.5%;	
+}
+.ms-srch-item-icon {
+	margin-top: 0px;
+}
+.ms-srch-item-previewContainer {
+	margin-top: 0px;
+	border:none;
+	background:none;
+}
+.ms-srch-item-preview {
+	border: none;
+}
+.ms-srch-item-summaryPreview {
+	width: 75%;
+}
+.ms-srch-resultFooter {
+	width: 100%;
+}
+.ms-srch-result #ResultCount {
+	text-align: left;
+	width: 65%;
+	float: left;
+	color: #595955;
+	font: 14px calibri_bold;	
+}
+.ms-srch-result #ResultHeader {
+	margin: 0px;
+	width: 30%;
+	text-align: right;
+	float: right;
+	color: #595955;
+	font-family: 'calibri_regular';
+	font-size: 14px;
+}
+.ms-srch-result #Actions li {
+	margin-right: 0px;
+}
+#ResultPaging {
+	margin-top: 10px;
+	float: right;
+	width: 100%;
+}
+.ms-srch-video-itemmain {
+	max-width: 81%;
+	padding-bottom: 0px;
+	min-height: 68px;
+}
+.ms-srch-hover-standardSize {
+	width: 100% !important;
+}
+.ms-srch-hover-glass-siteViewer, .ms-srch-hover-siteViewerContainer {
+	height: 268px !important;
+	width: 350px !important;
+}
+.ms-srch-hover-subTitle > h3 {
+	margin: 0px;
+}
+.ms-srch-hover-siteViewer {
+}
+.ms-srch-hover-body {
+	padding: 0px 20px 20px 20px;
+}
+.ms-srch-video-itemmain .ms-srch-item-title h3 {
+	font: 14px calibri_bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.ms-srch-video-itemthumbnail {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+#Paging.ms-srch-Paging #PagingSelf a {
+	color: #fff;
+	background: #0067B0;
+	font-size: 14px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 14px;
+}
+#PageLinkNext:after {
+	content: ">";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	display: block;
+	font-size: 14px;
+	color: #595955;
+	margin-top: -7px;
+}
+#PageLinkPrev:after {
+	content: "<";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	display: block;
+	font-size: 14px;
+	color: #595955;
+	margin-top: -7px;
+}
+#Paging.ms-srch-Paging #PagingImageLink a {
+	border: none;
+	background: none;
+	padding: 5px 0;
+}
+#Paging.ms-srch-Paging .ms-promlink-button-image {
+	display: none;
+}
+#Paging.ms-srch-Paging {
+	text-align: right;
+}
+.ms-srch-result #PagingLink a {
+	padding: 0px 5px 0px 5px;
+	color: #595955;
+}
+.ms-srch-result #PagingLink a:hover, .ms-srch-result #PagingLink a:active, .ms-srch-result #PagingLink a:focus{
+	color: #0067B0 !important;
+}
+.ms-srch-result #PagingSelf a {
+	padding: 0px 4px 2px 4px;
+}
+.ms-srch-hover-wacSize {
+	width: 100% !important;
+}
+/**** Search Resluts Layout CSS Ends Here *************/
+.modal-wrapper .modal-header {
+	background: #0067B0;
+	color: #fff;
+}
+.modal-wrapper .modal-body{
+	height: 400px !important;
+    
+}
+
+.megamenandsearch_wrapper .modal-body{
+	height:auto !important;
+}
+input.check_box{
+	width:15px !important;
+	margin:0px;
+}
+.modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0, -100%);
+}
+
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
+
+.modal-wrapper button {
+	min-width: auto !important;
+}
+.modal-wrapper input {
+	width: 100%;
+}
+.modal-wrapper .modal-body td, th {
+	border: 1px solid #989898;
+	text-align: left;
+	padding: 8px;
+}
+.modal-wrapper .modal-title {
+	color: #fff !important;
+}
+.modal-wrapper button.close {
+	color: #fff;
+	opacity: 1;
+}
+.modal-wrapper button.close:hover {
+	color: #fff;
+	opacity: 1;
+}
+.modal-wrapper button.close:focus {
+	outline: none;
+}
+.btn-green {
+	background: #51b749;
+	border-color: #4cae4c;
+	color: #fff;
+}
+.btn-red {
+	background: #c63248;
+	border-color: #b7253b;
+	color: #fff;
+}
+.btn-green:hover {
+	background: #3bb631;
+	border-color: #4cae4c;
+	color: #fff;
+}
+.btn-red:hover {
+	background: #cb273f;
+	border-color: #b7253b;
+	color: #fff;
+}
+span.maxlinks {
+	color: #F89F6D;
+}
+span.errorMsg {
+	color: #c63248;
+}
+/**** Starts Departments Picture Square Section****/
+.picturesquare-wrapper .ms-wpContentDivSpace {
+	max-width: 350px;
+	min-width: 100%;
+}
+/**** Ends Departments Picture Square Section****/
+/********* Picture gallary popup Starts here (used fancyBox v2.1.5 from fancyapps.com) ***************/
+.fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+.fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	z-index: 8020;
+}
+.fancybox-skin {
+	position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.fancybox-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+.picture-square-container .owl-carousel.owl-drag .owl-item{
+	height:124px;
+}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	/*background-image: url(../../images/fancybox/fancybox_sprite.png);*/
+}
+.fancybox-next span {
+    right: 15px;
+    background-position: 0 -72px;
+    background: #595955;   
+    padding: 7px 15px;
+    font-size: 17px;
+    color: #fff;
+}
+.fancybox-prev span {
+    left: 15px;
+    background-position: 0 -72px;
+    background: #595955;   
+    padding: 5px 10px;
+    font-size: 17px;
+    color: #fff;
+}
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+#fancybox-loading div {
+	width: 44px;
+	height: 44px;
+	background: url(../../images/fancybox/fancybox_loading.gif) center center no-repeat;
+}
+.fancybox-close {
+    position: absolute;
+    top: 0px;
+    right: -22px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 8040;
+    color: #acacae;
+}
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent url(../../images/fancybox/blank.gif); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 8040;
+}
+.fancybox-prev {
+	left: 0;
+}
+.fancybox-next {
+	right: 0;
+}
+.fancybox-nav span {
+	position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 34px;
+    margin-top: -18px;
+    cursor: pointer;
+    z-index: 8040;   
+}
+.fancybox-prev span {
+	left: 10px;
+	background-position: 0 -36px;
+}
+.fancybox-next span {
+	right: 10px;
+	background-position: 0 -72px;
+}
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+.fancybox-tmp {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+	max-width: 99999px;
+	max-height: 99999px;
+	overflow: visible !important;
+}
+/* Overlay helper */
+.fancybox-lock {
+    overflow: visible !important;
+    width: auto;
+}
+.fancybox-lock body {
+    overflow: hidden !important;
+}
+.fancybox-lock-test {
+    overflow-y: hidden !important;
+}
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+    background: rgba(0, 0, 0, 0.88);
+}
+.fancybox-overlay-fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.fancybox-lock .fancybox-overlay {
+	overflow: auto;
+	overflow-y: scroll;
+}
+#fancybox-thumbs {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 8050;
+}
+#fancybox-thumbs.bottom {
+	bottom: 2px;
+}
+#fancybox-thumbs.top {
+	top: 2px;
+}
+#fancybox-thumbs ul {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#fancybox-thumbs ul li {
+	float: left;
+	padding: 1px;
+	opacity: 0.5;
+}
+#fancybox-thumbs ul li.active {
+	opacity: 0.75;
+	padding: 0;
+	border: 1px solid #fff;
+}
+#fancybox-thumbs ul li:hover {
+	opacity: 1;
+}
+#fancybox-thumbs ul li a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #222;
+	background: #111;
+	outline: none;
+}
+#fancybox-thumbs ul li img {
+	display: block;
+	position: relative;
+	border: 0;
+	padding: 0;
+	max-width: none;
+}
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
+	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+		background-image: url(fancybox_sprite@2x.png);
+		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+	#fancybox-loading div {
+		background-image: url(fancybox_loading@2x.gif);
+		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+}
+.picture-square-container {
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:30px;
+}
+.picture-square-container p{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 170px;
+    overflow: hidden;
+}
+.picture-square-container .owl-item img {
+	width:100% !important;
+	height:90px;
+}
+.picture-square-container .owl-nav button.owl-prev {
+    left: -30px !important;
+}
+.picture-square-container .owl-nav button.owl-next {
+    right: -30px !important;
+}
+/********* Picture gallary popup ends here ***************/
+/********** KPCU Home Page News Details CSS Starts Here (This CSS is not validated) ********/
+.news_detailed_image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.User-details {
+    position: relative;
+    overflow: hidden;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+.User-details img {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: solid 1px #cecece;
+}
+h5.auther_name {
+    margin-top: 0px;
+    font-family: 'calibri_bold';
+    color: #595955;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.User-details .content-Updates {
+    margin-left: 60px;
+    width: auto;
+}
+.news_author ul {
+    margin-top: 10px;
+}
+.news_content ul li {
+    margin-bottom: 18px;
+}
+.social-Btn {
+  	margin-bottom: 40px;
+}
+.taglist h3{
+    font-size: 16px; 
+    font-family: 'calibri_bold';
+}
+.newsDetailInner span.gray {
+    margin-left: 10px;
+}
+.social-Btn span {   
+    border: 1px solid #0067B0;
+    display: inline-block;
+    background-color: #fff;    
+    min-height: 36px;
+    padding-left: 13px;
+    font:16px "calibri_bold";
+    line-height: 1.2;
+    color: #0067B0;
+    margin-right: 10px;
+}
+.social-Btn a {
+    background-color: #0067B0;
+    padding: 10px;
+    display: inherit;
+    margin-left: 10px;
+    color: #fff;
+    min-width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.social-Btn a i {
+    margin-right: 10px;
+}
+.commentBox label {
+    color: #484848;
+    font-weight: normal;
+    font-size: 16px;
+}
+.commentBox .btn {
+    width: auto;
+    color: #fff;
+    background-color: #0067B0;
+    border-radius: 4px;
+    border-color: #0067B0;
+    box-shadow: none;
+    text-transform: capitalize;
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: calibri;
+    line-height: 1.2;
+}
+.commentBox .btn i {
+    margin-right: 6px;
+}
+.recent-Comments {
+    font-family: 'proximanova-regular', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    position: relative;
+    overflow: hidden;
+    border-top: 0px solid #ddd;
+    padding-top: 12px;
+    min-height: 140px;
+}
+.recent-Comments .content-Updates {
+    margin-left: 60px;
+}
+.recent-Comments img {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+.recent-Comments h5 {
+    font:16px "calibri_bold";
+    line-height: 1.2;
+    margin: 0;
+    color: #0067B0;
+}
+.recent-Comments span{
+	font-size: 12px;
+    color: #4d4d4d;
+}
+.sections-comments .list-Updates {
+    margin: 0;
+}
+.commentReply li {
+    padding-top: 5px;
+}
+.commentReply li>a {
+    text-transform: capitalize;
+    color: #0067B0 !important;
+    font:14px "calibri_regular";
+}
+.moreCommentLink {
+    padding: 10px 0;
+    font-size: 16px;
+}
+.moreCommentLink a {
+   color:#0067B0;
+   text-decoration:underline !important;
+}
+
+.content-Updates p {
+    line-height: 1.3;
+}
+.content-Updates ul {
+    margin: 0;
+    padding: 0;
+}
+.content-Updates ul li {
+    display: inline-block;
+    min-width: 40px;
+}
+.content-Updates a, .content-Updates a:hover, .updated-right a, .updated-right a:hover {
+    color: #484848;
+    text-decoration: none;
+}
+.news_author ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.news_author ul li {
+    display: inline-block;
+    min-width: 40px;
+}
+.news_author a, .news_author a:hover {
+    color:#343434;
+    text-decoration: none;
+}
+ul.tags li {
+    background: #fff;
+    padding: 4px;
+    border: solid 2px #0067B0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+}
+.sections-newsdetails h1{
+	font-family: 'calibri_bold';
+}
+.news_author i {
+    font-size: 15px;
+}
+.star_rated {
+    color: #0067B0;
+}
+.not_rated {
+    color: #595955;
+}
+h5.small_blue {
+    font-family: 'calibri_bold';
+    font-size: 14px;
+    color: #0067B0;
+    margin-top: 0px;
+}
+.content-Updates p{
+	color: #1a1a1a;
+    font: 14px "calibri_bold";
+}
+
+/********** KPCU Home Page News Details CSS Ends Here ********/
+/********** KPCU Home Page News Archive CSS Starts Here ********/
+.newsarchiveTitle {
+    font-family: 'calibri_bold';
+    color: #0067B0;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.newsarchiveContent {
+	font-size: 14px; 
+	color: #595955;
+	font-family: 'calibri_regular';
+	margin-top: 6px;
+}
+.newsarchiveContent p {
+	margin:0px;
+}
+span.read_more {
+	color: #c63247;
+	font-size: 14px; 
+	font-family: 'calibri_regular';
+}
+.newsarchiveinfo {
+	margin-bottom: 10px;
+}
+.newsarchiveinfo span.gray {
+	margin-right: 30px;
+}
+.newsarchive .newsarchiveitem{
+	border:none;
+}
+.newsarchive .newsarchiveitem img {
+    width: 20%;
+    height:104px;
+}
+.news_details{
+	width: 78%;
+    float: right;
+    margin-top: -6px;
+}
+.newsarchiveitem , .news_list{
+	padding: 10px 10px;
+	float: left;
+	border-bottom: solid 1px #d1d1d1;
+	min-height: 70px;
+	width: 100%;
+	margin-bottom: 0px;
+	margin-top:6px;
+}
+.hrnews .news_btn{
+	background:#0067B0;
+}
+.news-Like .fa-thumbs-o-up {
+   	color:#0067B0;
+}
+.news-comment .fa-commenting-o{
+   	color:#0067B0;
+}
+.news-Share .fa-share-alt{
+   	color:#0067B0;
+}
+.fa-th:before {
+    content: "\f00a";
+}
+
+/********** KPCU Home Page News Archive CSS Ended Here ********/
+/****** one page layout css starts here ( Not validated CSS) ******/
+.onePageLayoutMain  .departmental_featurebox {
+	margin-top:0px;
+}
+/******* one page layout css ends here *******/
+/* width for banner image for all resolution **/
+.clrs-section{
+	clear:both;
+}

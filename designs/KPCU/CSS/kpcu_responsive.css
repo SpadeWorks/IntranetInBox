@@ -1,0 +1,431 @@
+﻿@media (max-width:991px){
+.mobile_header{
+   
+    padding: 15px;
+    background: linear-gradient(90deg, rgb(226, 226, 226), rgb(243, 243, 243) 70.71%);
+    height: 60px;
+    box-shadow: 1px 1px 1px 1px #5f5f5f1c;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.clrs-section{
+clear:none;
+}
+
+.happening_box,.executive-wrapper.featured_box,.recently-updated-doc-wrapper .card,.scoop_wrapper{
+	height:480px !important;
+}
+h4.mainpoint_heading{
+	font-size:24px;
+	width:100% !important;
+}
+.main_points p{
+	font-size:13px;
+}
+.birthday_carousel{
+	background:#fff;
+}
+.bday_info {
+    width: auto;
+}
+
+.allnews{
+	top:0px;
+}
+/* header part styling starts here */
+.search_wrapper,.weather_wrapper,.menu_wrapper {
+    height: 30px;
+    width: 50px;
+    /* height: 30px; */
+    width: 50px;
+    padding: 0px 10px;
+    z-index:11;
+    border-left: solid 1px #d6d6d6;}
+    
+.search_wrapper a,.weather_wrapper a,.menu_wrapper a {
+font-size: 24px;
+color: #0072c6;
+transition:all 0.5s;
+    }
+.search_wrapper a:hover,.weather_wrapper a:hover,.menu_wrapper a:hover {
+font-size: 24px;
+color:#F89F6D !important;
+    }
+
+    
+    #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+   	background: #004466; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    z-index:15;
+}
+.mobile_searchbox_wrapper{
+	position:relative;
+	top:300px;
+	z-index:16;
+	display:none;
+}
+div#overlay i {
+    position: absolute;
+    right: 10px;
+    color: #FFF;
+    top: 10px;
+    font-size: 29px;
+}
+.mobile_weather_wrapper{
+	position:relative;
+	top:300px;
+	z-index:16;
+	display:none;
+}
+.mobile_weather_wrapper img{
+	width:100%;
+}
+h3.caption_text{
+	width: 97%;
+}
+.bday_info {
+    width:auto;
+}
+
+/*styles for searchbox animation starts here*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+/*styles for searchbox animation starts here*/
+
+/* header part styling ends here */
+
+.bravo_winnerinfo{
+	width:68%;
+}
+.menu-mobile{
+	width: 1%;
+    float: right;
+}
+.Header_container{
+	padding:0px;
+}
+.logo_wrapper {
+	width: 40%;
+}
+.mobile_Responsive{
+	margin-top:-55px;
+}
+.megamenu_container{
+	background:#fff;
+	z-index: 1;
+    position: fixed;
+    height: 87px;
+}
+.search-box-cont {
+    float: right;
+    background: #e4e4e4;
+    transition: all 0.5s;
+    padding: 5px 10px 10px;
+    position: fixed;
+    top: 132px;
+    z-index: 9999;
+    
+}
+
+ul.show-on-mobile{
+	background: #fff;
+    left: 0px;
+    padding: 13px;
+    z-index: 101;
+    z-index: 101;
+    position: fixed;
+}
+.menu > ul > li > div > ul{
+	width:100%;
+}
+.mobile_iconbox{
+position: fixed;
+width: 100%;
+top: 78px;
+z-index: 11;
+    }
+#Ticker{
+	display:none !important;
+}
+}
+
+@media (max-width:767px){
+	
+.NewsTitle {
+min-height: 30px;
+}
+.NewsTitle h2{
+font-size:14px;
+}
+.social-Btn span{
+	margin-bottom:10px;
+}
+.main_points::before {
+    display: none;
+}
+.main_points {
+    border-bottom: solid 1px #d4d4d4;
+    width: 100%;
+    }
+.allnews {
+	top:0px;
+}
+.mobile_header{
+    padding: 15px;
+    background: linear-gradient(90deg, rgb(226, 226, 226), rgb(243, 243, 243) 70.71%);
+    height: 60px;
+    box-shadow: 1px 1px 1px 1px #5f5f5f1c;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.birthday_carousel,.happening_box{
+	height:auto !important;
+}
+.eventtitle_container{
+width: -webkit-calc(92% - 30%);
+}
+#contentRow {
+    padding-top: 90px !important;
+}
+.ddlhappening select{
+	z-index: 1;
+    position: relative;
+}
+/* header part styling starts here */
+.search_wrapper,.weather_wrapper,.menu_wrapper {
+    height: 30px;
+    width: 50px;
+    /* height: 30px; */
+    width: 50px;
+    padding: 0px 10px;
+    z-index:11;
+    margin-right:10px;}
+    
+.search_wrapper a,.weather_wrapper a,.menu_wrapper a {
+font-size: 24px;
+color: #f89F6D;
+transition:all 0.5s;
+    }
+.search_wrapper a:hover,.weather_wrapper a:hover,.menu_wrapper a:hover {
+font-size: 24px;
+color:#F89F6D !important;
+    }
+
+    
+    #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+   	background: #004466; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    z-index:15;
+}
+.mobile_searchbox_wrapper{
+	position:relative;
+	top:300px;
+	z-index:16;
+	display:none;
+}
+div#overlay i {
+    position: absolute;
+    right: 10px;
+    color: #FFF;
+    top: 10px;
+    font-size: 29px;
+}
+.mobile_weather_wrapper{
+	position:relative;
+	top:300px;
+	z-index:16;
+	display:none;
+}
+.mobile_weather_wrapper img{
+	width:100%;
+}
+h3.caption_text{
+	width: 97%;
+}
+.bday_info {
+    width: 100%;
+}
+
+/*styles for searchbox animation starts here*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+.WeatherInfo{
+    position: relative;
+    right: 85px;
+    }
+.weather_containbox{
+    position: fixed;
+    top: 127px;
+    background: #e4e4e4;
+    padding: 10px;
+    z-index: 22;
+    }
+
+.show_box{
+	display:block;
+}
+/*styles for searchbox animation starts here*/
+
+/* header part styling ends here */
+
+/*styles for the news feeds starts here*/
+.ms-microfeed-replyText{
+	    min-width: auto;
+    max-width: none;
+}
+.ms-microfeed-replyArea{
+	margin-left:0;
+	min-width:auto;
+}
+/*styles for the news feeds ends here*/
+/*styles for footer starts here*/
+.footer-section{
+	height:auto;
+}
+.bottom_menubox ul li{
+	margin-left: 5px;
+    padding-left: 5px;
+}
+.social_box{
+	float:none !important;
+}
+/*styles for footer ends here*/
+
+/*styles for the news archive starts here*/
+.newsarchive .newsarchiveitem img{
+	height:auto;
+	width:100%;
+	margin-bottom:30px;
+}
+.news_details{
+	float:none;
+	width:100%;
+}
+/*styles for the news archive ends here*/
+/*styles for the search results starts here*/
+.searchresult_container .ms-srch-item{
+	width:100%;
+	word-wrap: break-word;
+}
+.ms-srch-hover-outerContainer {
+    left: 0px !important;
+    width: 100% !important;
+}
+.ms-srch-hover-glass-siteViewer{
+	width:100%;
+}
+/*styles for the search result ends here*/
+
+/*styles for the refiners starts here*/
+span.filter_img {
+    display: block;
+}
+span.filter_img i {
+    font-size: 16px;
+    background: border-box;
+    color: #0072c6;
+    background: #d8d8d8;
+    padding: 8px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: solid 1px #d0d0d0;
+    box-shadow: 1px 1px 1px 1px #bfbfbfe0;
+}
+.Refiners_PanelWidth{
+display:none;
+}
+
+/*styles for the refiners ends here*/
+
+}

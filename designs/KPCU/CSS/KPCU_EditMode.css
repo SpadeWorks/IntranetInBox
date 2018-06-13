@@ -1,0 +1,19 @@
+﻿.edit-mode-panel{
+	display:block !important;
+}
+.ms-long{
+	width: 100% !important;
+}
+input.ms-long{
+	width:98%;
+}
+div.ms-inputuserfield{
+	height: auto !important;
+}
+/*User People picker field increasing 500px*/
+td[id$="_containerCell"] {
+    width:500px !important;
+}
+input[type=password], input[type=text], input[type=file], textarea, .ms-inputBox{
+	padding: 2px 0px !important;
+}

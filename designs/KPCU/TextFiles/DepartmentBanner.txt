@@ -1,0 +1,10 @@
+<div id="bannerimage">
+<h2 class="banner_heading" id="BannerHeading"></h2>
+<p id="BannerDescription"></p>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    KPCU.LoadDepartmentBanner();
+});
+</script>

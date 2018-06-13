@@ -1,0 +1,60 @@
+<div class="contacts-wrapper">
+            <div class="featured_box fullwidth">
+                <div class="row">
+                    <div class="featurebgimg">
+                    </div>
+                    <div class="">
+                        <div class="col-md-12">
+                            <h3 class="featurebox_heading blue">Contacts and Commitment</h3>
+                        </div>
+                        <!-- Latest compiled and minified Bootstrap CSS -->
+                        <div class="col-md-12">
+                            <div class="panel-group" id="accordion">
+                                <div class="row" id="contactscommitemtsRow">
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <!-- end container -->
+                    </div>
+                    <div class="view_morebox">
+                            <a href="../Pages/ContactsandCommitmentDetails.aspx">
+                                <div class="viewmore_text">
+                                    View All
+                                </div>
+                                <div class="next_arrow">
+
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                KPCU.ContactsAndCommitment();
+                $('#contactscommitemtsRow').slimScroll({
+                    alwaysVisible: true
+                });
+            });
+        </script>
+        <style>
+            .modal-body table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .modal-body td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .modal-body tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>

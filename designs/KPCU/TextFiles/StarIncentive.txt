@@ -1,0 +1,11 @@
+<div class="row">
+   <h2 class="bold_heading">Star Incentive Elements <span class="fade_heading">for</span> <span id="starDate" class="fade_heading"></span></h2>
+   <div class="star_incentive">
+      
+   </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    KPCU.StarIncentive();
+});
+</script>

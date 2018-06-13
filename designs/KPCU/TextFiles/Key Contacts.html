@@ -1,0 +1,78 @@
+﻿<html>
+<head>
+<script type="text/javascript">
+	 $(document).ready(function() {
+			        var i = 0;  
+			        var ListUrl = _spPageContextInfo.webAbsoluteUrl   + "/_api/web/lists/getbytitle('Key Contacts')/Items?&$top=4";  
+			        var Select = "&$select=KeyContactUserName/FirstName,KeyContactUserName/LastName,KeyContactUserName/JobTitle,KeyContactUserName/EMail,KeyContactUserName/UserName,KeyContactUserName/Id,KeyContactUserName/Department&$expand=KeyContactUserName/Id";  
+			        var Sort = "&$orderby=Modified desc";  
+			        //var Filter = "&$filter=ContentType eq 'Key Contact'";  
+			       	var Query = Select + Sort;
+			       	$.ajax(
+	{  
+		            url: ListUrl + Query,  type: "GET", headers:   
+				    {   
+				      "accept": "application/json;odata=verbose"   
+				    },   
+				    success: successHandler, error: errorHandler   
+  });
+   function successHandler(data)   
+   {  
+					if (data.d != undefined) {  
+					var KeyContactsHTML = "";  
+					$.each(data.d.results, function (index, item) {  
+					$("#KeyContacts").show();
+					var Dept = item.KeyContactUserName.Department == null ? "" : item.KeyContactUserName.Department;
+					var userid = item.KeyContactUserName.Id; 
+					var FirstName = item.KeyContactUserName.FirstName;  
+					var LastName = item.KeyContactUserName.LastName;				
+					var jobTitle = item.KeyContactUserName.JobTitle == null ? "" : item.KeyContactUserName.JobTitle; 					              				 
+					var EMail = item.KeyContactUserName.EMail;  
+					var UserName = item.KeyContactUserName.UserName;  
+					UserName = UserName.split("@")[0];  
+					var ImgSrc = _spPageContextInfo.webAbsoluteUrl   + "/_layouts/15/userphoto.aspx?size=L&accountname=" + EMail  
+					ImgSrc = ImgSrc.replace("UserName", UserName); 			
+					KeyContactsHTML = 
+					"<div class='news_list'>"
+					+ "<div class='Item" + "" + "'>" 
+					+ "<img src='" + ImgSrc + "'style='width: 70px;height: 70px;'>" 
+					+ "<div class='wt-keycontacts-text'>"  
+					+ "<div class='wt-keycontacts-text-name'><h3 class='name'>" + "<a href='https://kpcu.sharepoint.com/sites/Intranet-Dev/HR/_layouts/15/userdisp.aspx?ID="+ userid +"' target='_blank' >" + FirstName + "  " + LastName + "</a>" + "</h3></div>"  
+					+ "<div class='wt-keycontacts-text-title'>" + jobTitle + "</div>" 
+					+ "<div class='wt-keycontacts-text-title'>" + Dept + "</div>"                            
+					+ "</div></div></div></div> ";  
+					$("#Key").append(KeyContactsHTML);  
+					//increase count until .each is done.  
+					i++; 
+					
+				});  
+       }  
+	} 
+	function errorHandler(error)   
+  {   
+					alert(JSON.stringify(error));   
+  } 
+ });
+</script>
+</head>
+<body>
+<div class="departmental_featurebox fullwidth">
+<div class="rebonwith_heading">
+<h3 class="rebonwith_heading">Key Contacts</h3>
+</div>
+<div id="KeyContacts">  
+<div id="Key"></div>    
+</div> 
+<div class="view_morebox"><div class="viewmore_text">
+<a href="../Pages/All-Key-Contacts.aspx">View All</a>
+</div>
+<div class="next_arrow">
+<a href="../Pages/All-Key-Contacts.aspx">
+<img src="/sites/Intranet-Dev/Style Library/KPCU/Images/Arrow.png" class="img-responsive"></a>
+
+</div>
+</div>
+</div>
+</body>
+</html>
+

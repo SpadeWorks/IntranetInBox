@@ -1,0 +1,31 @@
+<div class="departmental_featurebox fullwidth">
+<div class="rebonwith_heading">
+<h3 class="rebonwith_heading">Key Contacts</h3>
+</div>
+<div class="news_list">
+<img src="images/keycontact_dummy.png" id="keyContactsImg">
+<h3 class="name" id="keycontactsUserName">Anjolena Keth</h3>
+<p id="KeycontactsJobtitle">
+about a new parking garage as interesting as an investigative
+</p>
+
+<p id="Keycontactsdepartment">
+about a new parking garage as interesting as an investigative
+</p>
+</div>
+
+<div class="view_morebox"><div class="viewmore_text">
+<a href="../Pages/All-Key-Contacts.aspx">View All</a>
+</div>
+<div class="next_arrow">
+<a href="../Pages/All-Key-Contacts.aspx">
+<img src="/sites/Intranet-Dev/Style Library/KPCU/Images/Arrow.png" class="img-responsive"></a>
+
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        KPCU.KeyContacts();
+    });
+</script>

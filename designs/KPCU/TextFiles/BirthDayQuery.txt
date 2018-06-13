@@ -1,0 +1,92 @@
+﻿<div id="resultsDiv"></div>
+<script type="text/javascript">
+	$(document).ready(function () {
+		var e = ExecuteOrDelayUntilScriptLoaded(executeQuery(), "sp.js");
+	});	 
+	Date.prototype.AddDays=function(days)
+	{
+		this.setDate(this.getDate() + days);
+		return this;
+	} 
+	function executeQuery() {
+	 
+		Results = {
+			element: '',
+				url: '',
+	 
+			init: function (element) {
+				Results.element = element;
+	 
+				var birthday = 'RefinableDate00';
+				var space = '%20'; var colon = '%3A'; var quote = '%22'; var gt = '%3E'; var lt = '%3C'; var amp = '&';
+		 
+				// Get current date
+				var currentTime = new Date();
+				var startMonth = currentTime.getMonth()+1;
+				var day = currentTime.getDate();
+		 
+				// Get current date + 30
+				var endTime = new Date();
+				var endTime = currentTime.AddDays(30);
+				var endMonth = endTime.getMonth()+1;
+				var endDay = endTime.getDate();
+				//var endMonth = '9';
+				//var endDay = '30';
+
+				var querytext = "";
+		 
+				// build query with the magic 2000 year
+				if(startMonth!='12') {
+					querytext += birthday + gt + quote + day + '-' + startMonth + '-' + '2000' + quote + space + 'AND' + space + birthday + lt + quote + endDay + '-' + endMonth  + '-' + '2000' + quote;
+				}
+				else {
+					querytext += birthday + gt + quote + day + '-' + startMonth + '-' + '2000' + quote + space + 'OR' + space + birthday + lt + quote + endDay + '-' + endMonth + '-' + '2000' + quote;
+				}
+				
+				Results.url = _spPageContextInfo.webAbsoluteUrl + "/_api/search/query?querytext=%27" + querytext + "%27&sourceid=%27B09A7990-05EA-4AF9-81EF-EDFAB16C4E31%27&selectproperties=%27Title,"+ birthday +",Path%27&sortlist=%27"+ birthday +":ascending%27";
+			},
+	 
+			load: function () {
+				console.log(Results.url)
+				$.ajax(
+						{
+							url: Results.url,
+							method: "GET",
+							headers: {
+							   "accept": "application/json; odata=verbose",
+							},
+							success: Results.onSuccess,
+							error: Results.onError
+						}
+					);
+			},	 
+			onSuccess: function (data) {
+				var results = data.d.query.PrimaryQueryResult.RelevantResults.Table.Rows.results;
+				console.log(results);
+				var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+				var html = "<div class='birthday'>";	 
+				for (var i = 0; i < results.length; i++) {
+					var name = results[i].Cells.results[2].Value;
+					var date = new Date(Date.parse(results[i].Cells.results[3].Value));
+					var link = results[i].Cells.results[4].Value;
+						html += "<span>";
+						html += "<a href='"+link+"'>" + name + "</a>";
+						html += " "
+						html += date.getDate() + " "+ months[date.getMonth()];
+						html += " ";
+				}	 
+				if (results.length == 0){
+					
+				  html += "There are no birthdays (known).";
+				}	 
+				html += "</div>";
+				Results.element.html(html);
+			},	 
+			onError: function (err) {
+				alert(JSON.stringify(err));
+			}
+		}	 
+		Results.init($('#resultsDiv'));
+		Results.load(); 
+	}
+</script>

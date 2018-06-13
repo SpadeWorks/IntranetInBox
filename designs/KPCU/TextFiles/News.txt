@@ -1,0 +1,182 @@
+
+
+                                <div class="news_box">
+                                    <div class="latest_news">
+                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                        <div class="nshort_details">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="hrnews">
+                                                    <button type="button" class="btn btn-primary btn-sm news_btn">HR News</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="duration_container">
+                                                    <div class="month_box">
+                                                        Mar 29, 2018
+                                                    </div>
+                                                    <div class="day_box">
+                                                        Mon 4:29 PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-12 col-xs-12">
+                                                <div class="latestnews_heading">
+                                                    <h2 class="banner_heading">KeyPoint Credit Union named a 2018 Top Workplace by Bay Area News Group
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12 col-xs-12">
+                                                <div class="all_news">
+                                                    <a href="#">All News</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="black_overlay"></div> -->
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <div class="news_slider">
+                                            <section id="demos">
+                                                <div class="large-12 columns">
+                                                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+
+
+                                                        <div class="owl-stage-outer">
+                                                            <div class="owl-stage" style="transform: translate3d(-1863px, 0px, 0px); transition: 0.25s; width: 3105px;">
+                                                                <div class="owl-item cloned" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item cloned" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item cloned" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item cloned" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item active" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item active" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item cloned active" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item cloned active" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item cloned" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="owl-item cloned" style="width: 197px; margin-right: 10px;">
+                                                                    <div class="item">
+                                                                        <img src="../Style%20Library/KPCU/Images/Dummy_latest_news.jpg" class="img-responsive">
+                                                                        <p class="text-center">Test
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-nav">
+                                                            <button type="button" role="presentation" class="owl-prev">
+                                                                <span aria-label="Previous">‹</span>
+                                                            </button>
+                                                            <button type="button" role="presentation" class="owl-next">
+                                                                <span aria-label="Next">›</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="owl-dots">
+                                                            <button role="button" class="owl-dot">
+                                                                <span></span>
+                                                            </button>
+                                                            <button role="button" class="owl-dot active">
+                                                                <span></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            

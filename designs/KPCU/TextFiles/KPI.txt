@@ -1,0 +1,10 @@
+<div class="row">
+   <h2 class="bold_heading">KPIs</h2>
+   <div class="kpis">
+   </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    KPCU.KPIs();
+});
+</script>
